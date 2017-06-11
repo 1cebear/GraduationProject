@@ -1,0 +1,2432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="594b709f-78d0-4cca-be6a-41c44eeaffe7" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/apache_tomcat_8_5.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/controller/RootController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/controller/dish/DishRestController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/controller/json/JacksonObjectMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/controller/menu/AbstractMenuController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/controller/menu/MenuRestController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/controller/user/AbstractUserController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/controller/user/UserRestController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/controller/userscore/AbstractUserScoreController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/controller/userscore/UserScoreRestController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/repository/jpa/JpaDishRepository.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/repository/jpa/JpaMenuRepository.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/repository/jpa/JpaUserRepository.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/repository/jpa/JpaUserScoreRepository.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/cache/ehcache.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/cache/ehcache.xsd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/db/populate_db.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/db/postgres.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/db/tomcat.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-db.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-mvc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/style.css" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DatabaseView">
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="graduationproject@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="graduationproject@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$GroupNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="userscores" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="graduationproject@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$GroupNode" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="graduationproject@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$GroupNode" />
+      </PATH_ELEMENT>
+    </PATH>
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/model/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="CSS File" />
+        <option value="Jsp File" />
+        <option value="spring-beans.schema" />
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>jacks</find>
+      <find>jdb</find>
+      <find>hibe</find>
+      <find>mea</find>
+      <find>cac</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/repository/jpa/JpaDishRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/style.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/dishes.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/dish/RestDishController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/dish/DishRestController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/service/DishServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/Dish.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/dish/AbstractDishController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/RootController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/gradproject/controller/json/JacksonObjectMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/gradproject/service/DishServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/db/tomcat.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/gradproject/model/BaseEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/gradproject/model/Menu.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/gradproject/model/Dish.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/db/postgres.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/db/populate_db.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/gradproject/controller/RootController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring/spring-app.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring/spring-db.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring/spring-mvc.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/controller/json/JacksonObjectMapper.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/model/Dish.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/dishes.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/main.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/service/MenuServiceimpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/service/MenuServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/repository/jpa/JpaDishRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/repository/jpa/JpaMenuRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/controller/menu/AbstractMenuController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/controller/menu/MenuRestController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/controller/RootController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/controller/user/AbstractUserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/controller/user/UserRestController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/service/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/service/UserScoreServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/repository/UserScoreRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/service/UserScoreService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/controller/userscore/AbstractUserScoreController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/db/script.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/model/UserScore.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/model/Menu.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/repository/jpa/JpaUserScoreRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/repository/jpa/JpaUserRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/controller/userscore/UserScoreRestController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/model/User.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GraduationProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GraduationProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GraduationProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GraduationProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GraduationProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GraduationProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GraduationProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GraduationProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jsp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GraduationProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GraduationProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GraduationProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GraduationProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GraduationProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GraduationProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GraduationProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GraduationProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GraduationProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GraduationProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="topjava" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GraduationProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GraduationProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="topjava" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="repository" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GraduationProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GraduationProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="topjava" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="repository" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jpa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GraduationProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GraduationProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="topjava" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GraduationProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GraduationProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="topjava" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GraduationProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GraduationProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="topjava" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="userscore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GraduationProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GraduationProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="topjava" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GraduationProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GraduationProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="topjava" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="menu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GraduationProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GraduationProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="topjava" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="json" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GraduationProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GraduationProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="topjava" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dish" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="js.eslint.eslintPackage" value="" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL&#10;HSQLDB (Local)" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/SQL Dialects" value="PostgreSQL" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="last_opened_file_path" value="$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.8.8/jackson-databind-2.8.8.jar!/" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\java\GraduationProject\src\main\webapp\WEB-INF\jsp" />
+      <recent name="C:\java\GraduationProject\src\main\webapp" />
+      <recent name="C:\java\GraduationProject\src\main" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\java\GraduationProject\src\main\resources\spring" />
+      <recent name="C:\java\GraduationProject\src\main\resources\cache" />
+      <recent name="C:\java\GraduationProject\src\main\resources\db" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.Unnamed">
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings />
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <method />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
+      <module name="" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
+        <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
+        <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="BatchConfigurationType" factoryName="Batch">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Cold Fusion runner description" factoryName="Cold Fusion" custom_browser="" web_path="">
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="passParentEnv" value="true" />
+      <setting name="launchBrowser" value="true" />
+      <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SCRATCH_FILE_ID" value="0" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="GraduationProject" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
+      <method />
+    </configuration>
+    <configuration default="false" name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.12" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="update-resources" />
+      <deployment>
+        <artifact name="GraduationProject:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_GraduationProject_4" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="63513" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="GraduationProject:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Unnamed" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="594b709f-78d0-4cca-be6a-41c44eeaffe7" name="Default" comment="" />
+      <created>1496512047481</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1496512047481</updated>
+      <workItem from="1496512051467" duration="217000" />
+      <workItem from="1496512371943" duration="96000" />
+      <workItem from="1496579496421" duration="6189000" />
+      <workItem from="1496651320537" duration="6316000" />
+      <workItem from="1496746464397" duration="5450000" />
+      <workItem from="1496769896729" duration="1987000" />
+      <workItem from="1496778141334" duration="2194000" />
+      <workItem from="1496783750560" duration="574000" />
+      <workItem from="1496822155511" duration="3853000" />
+      <workItem from="1496858082882" duration="1962000" />
+      <workItem from="1496912328489" duration="10244000" />
+      <workItem from="1497000500797" duration="2908000" />
+      <workItem from="1497087175792" duration="4594000" />
+      <workItem from="1497105485071" duration="4954000" />
+      <workItem from="1497191486326" duration="5000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="51543000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997773" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.4978678" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28997868" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="20" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/controller/RootController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.8.8/jackson-databind-2.8.8.jar!/com/fasterxml/jackson/databind/ObjectMapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="256" column="24" lean-forward="false" selection-start-line="256" selection-start-column="24" selection-end-line="256" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db/tomcat.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/net/sf/ehcache/ehcache/2.10.3/ehcache-2.10.3.jar!/net/sf/ehcache/config/ConfigurationFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/cache/ehcache.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/cache/ehcache.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db/postgres.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="36" lean-forward="false" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-tools.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-db.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="62" selection-end-column="82" />
+          <folding>
+            <element signature="e#1295#1330#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.html" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="31" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-app.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/controller/json/JacksonObjectMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="32" lean-forward="false" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-mvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="7" column="123" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="123" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://MAVEN/topjava:topjava:1.0-SNAPSHOT">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>MAVEN</ID>
+          <OriginalElement>topjava:topjava:1.0-SNAPSHOT</OriginalElement>
+          <nodes>
+            <node x="0.0" y="582.2499999999998">topjava:topjava:1.0-SNAPSHOT</node>
+            <node x="454.0" y="380.06013119533463">org.slf4j:slf4j-api:jar:1.7.25</node>
+            <node x="194.0" y="344.9999999999998">org.slf4j:jcl-over-slf4j:jar:1.7.25</node>
+            <node x="199.5" y="413.9999999999998">org.slf4j:jul-to-slf4j:jar:1.7.25</node>
+            <node x="186.5" y="276.0">ch.qos.logback:logback-classic:jar:1.2.2</node>
+            <node x="440.0" y="268.75">ch.qos.logback:logback-classic:jar:1.2.2/ch.qos.logback:logback-core:jar:1.2.2</node>
+            <node x="165.5" y="0.0">org.springframework:spring-context-support:jar:unknown</node>
+            <node x="186.0" y="1800.0624999999998">org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE</node>
+            <node x="415.0" y="1821.1785714285713">org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework.data:spring-data-commons:jar:1.13.1.RELEASE</node>
+            <node x="714.5" y="1902.6785714285713">org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework.data:spring-data-commons:jar:1.13.1.RELEASE/org.slf4j:slf4j-api:jar:1.7.24</node>
+            <node x="702.5" y="1833.6785714285713">org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework.data:spring-data-commons:jar:1.13.1.RELEASE/org.slf4j:jcl-over-slf4j:jar:1.7.24</node>
+            <node x="445.0" y="1963.3660714285713">org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework:spring-orm:jar:4.3.7.RELEASE</node>
+            <node x="705.0" y="1975.8660714285713">org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework:spring-orm:jar:4.3.7.RELEASE/org.springframework:spring-jdbc:jar:4.3.7.RELEASE</node>
+            <node x="697.0" y="1657.8749999999998">org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework:spring-context:jar:4.3.7.RELEASE</node>
+            <node x="1121.0" y="1629.2499999999998">org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework:spring-context:jar:4.3.7.RELEASE/org.springframework:spring-expression:jar:4.3.7.RELEASE</node>
+            <node x="943.5" y="1769.6249999999998">org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework:spring-aop:jar:4.3.7.RELEASE</node>
+            <node x="949.0" y="2028.720238095238">org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework:spring-tx:jar:4.3.7.RELEASE</node>
+            <node x="1133.0" y="1897.4201186426944">org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework:spring-beans:jar:4.3.7.RELEASE</node>
+            <node x="1326.0" y="1800.3416869128605">org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework:spring-core:jar:4.3.7.RELEASE</node>
+            <node x="452.5" y="1751.8749999999998">org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.aspectj:aspectjrt:jar:1.8.10</node>
+            <node x="454.0" y="1682.8749999999998">org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.slf4j:slf4j-api:jar:1.7.25</node>
+            <node x="442.0" y="2032.3660714285713">org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.slf4j:jcl-over-slf4j:jar:1.7.25</node>
+            <node x="185.5" y="1869.0624999999998">org.springframework:spring-webmvc:jar:unknown</node>
+            <node x="197.0" y="616.7499999999998">org.springframework:spring-web:jar:3.0.5.RELEASE</node>
+            <node x="445.0" y="720.2499999999998">org.springframework:spring-web:jar:3.0.5.RELEASE/aopalliance:aopalliance:jar:1.0</node>
+            <node x="440.5" y="651.2499999999998">org.springframework:spring-web:jar:3.0.5.RELEASE/org.springframework:spring-beans:jar:3.0.5.RELEASE</node>
+            <node x="436.5" y="457.3749999999998">org.springframework:spring-web:jar:3.0.5.RELEASE/org.springframework:spring-context:jar:3.0.5.RELEASE</node>
+            <node x="444.5" y="582.2499999999998">org.springframework:spring-web:jar:3.0.5.RELEASE/org.springframework:spring-core:jar:3.0.5.RELEASE</node>
+            <node x="436.0" y="1234.2499999999998">org.hibernate:hibernate-core:jar:5.2.9.Final</node>
+            <node x="936.0" y="916.7861313573048">org.hibernate:hibernate-core:jar:5.2.9.Final/org.jboss.logging:jboss-logging:jar:3.3.0.Final</node>
+            <node x="679.5" y="1381.6851311953346">org.hibernate:hibernate-core:jar:5.2.9.Final/org.hibernate.javax.persistence:hibernate-jpa-2.1-api:jar:1.0.0.Final</node>
+            <node x="714.0" y="1431.6851311953346">org.hibernate:hibernate-core:jar:5.2.9.Final/org.javassist:javassist:jar:3.20.0-GA</node>
+            <node x="723.5" y="1500.6851311953346">org.hibernate:hibernate-core:jar:5.2.9.Final/antlr:antlr:jar:2.7.7</node>
+            <node x="655.0" y="1165.2499999999998">org.hibernate:hibernate-core:jar:5.2.9.Final/org.jboss.spec.javax.transaction:jboss-transaction-api_1.2_spec:jar:1.0.1.Final</node>
+            <node x="718.5" y="1096.2499999999998">org.hibernate:hibernate-core:jar:5.2.9.Final/org.jboss:jandex:jar:2.0.3.Final</node>
+            <node x="709.5" y="1027.2499999999998">org.hibernate:hibernate-core:jar:5.2.9.Final/com.fasterxml:classmate:jar:1.3.0</node>
+            <node x="718.5" y="1234.2499999999998">org.hibernate:hibernate-core:jar:5.2.9.Final/dom4j:dom4j:jar:1.6.1</node>
+            <node x="647.0" y="958.2499999999998">org.hibernate:hibernate-core:jar:5.2.9.Final/org.hibernate.common:hibernate-commons-annotations:jar:5.0.1.Final</node>
+            <node x="176.5" y="770.2499999999998">org.hibernate:hibernate-validator:jar:5.4.1.Final</node>
+            <node x="438.5" y="839.2499999999998">org.hibernate:hibernate-validator:jar:5.4.1.Final/javax.validation:validation-api:jar:1.1.0.Final</node>
+            <node x="449.0" y="770.2499999999998">org.hibernate:hibernate-validator:jar:5.4.1.Final/com.fasterxml:classmate:jar:1.3.1</node>
+            <node x="197.5" y="547.7499999999998">javax.el:javax.el-api:jar:3.0.0</node>
+            <node x="208.0" y="478.7499999999998">org.glassfish:javax.el:jar:3.0.0</node>
+            <node x="177.5" y="889.2499999999998">org.hibernate:hibernate-ehcache:jar:5.2.9.Final</node>
+            <node x="453.0" y="889.2499999999998">org.hibernate:hibernate-ehcache:jar:5.2.9.Final/net.sf.ehcache:ehcache:jar:2.10.3</node>
+            <node x="714.5" y="889.2499999999998">org.hibernate:hibernate-ehcache:jar:5.2.9.Final/net.sf.ehcache:ehcache:jar:2.10.3/org.slf4j:slf4j-api:jar:1.7.7</node>
+            <node x="178.0" y="138.0">org.apache.tomcat:tomcat-servlet-api:jar:8.5.5</node>
+            <node x="219.5" y="207.0">javax.servlet:jstl:jar:1.2</node>
+            <node x="181.0" y="1448.4999999999998">com.fasterxml.jackson.core:jackson-databind:jar:2.8.8.1</node>
+            <node x="421.0" y="1510.2499999999998">com.fasterxml.jackson.core:jackson-databind:jar:2.8.8.1/com.fasterxml.jackson.core:jackson-annotations:jar:2.8.0</node>
+            <node x="441.0" y="1441.2499999999998">com.fasterxml.jackson.core:jackson-databind:jar:2.8.8.1/com.fasterxml.jackson.core:jackson-core:jar:2.8.8</node>
+            <node x="151.0" y="1372.2499999999998">com.fasterxml.jackson.datatype:jackson-datatype-hibernate5:jar:2.8.8</node>
+            <node x="429.0" y="1372.2499999999998">com.fasterxml.jackson.datatype:jackson-datatype-hibernate5:jar:2.8.8/com.fasterxml.jackson.core:jackson-databind:jar:2.8.8</node>
+            <node x="468.5" y="1303.2499999999998">com.fasterxml.jackson.datatype:jackson-datatype-hibernate5:jar:2.8.8/javax.transaction:jta:jar:1.1</node>
+            <node x="164.0" y="1517.4999999999998">com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.8.8</node>
+            <node x="429.0" y="1579.2499999999998">com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.8.8/com.fasterxml.jackson.core:jackson-databind:jar:2.8.8.1</node>
+            <node x="199.5" y="1284.8749999999998">org.postgresql:postgresql:jar:42.0.0</node>
+            <node x="194.0" y="69.0">org.apache.tomcat:tomcat-jdbc:jar:8.5.5</node>
+            <node x="445.5" y="69.0">org.apache.tomcat:tomcat-jdbc:jar:8.5.5/org.apache.tomcat:tomcat-juli:jar:8.5.5</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="org.hibernate:hibernate-ehcache:jar:5.2.9.Final/net.sf.ehcache:ehcache:jar:2.10.3" target="org.hibernate:hibernate-ehcache:jar:5.2.9.Final/net.sf.ehcache:ehcache:jar:2.10.3/org.slf4j:slf4j-api:jar:1.7.7">
+              <point x="38.0" y="-0.0" />
+              <point x="-37.0" y="-0.0" />
+            </edge>
+            <edge source="org.hibernate:hibernate-validator:jar:5.4.1.Final" target="org.hibernate:hibernate-core:jar:5.2.9.Final/org.jboss.logging:jboss-logging:jar:3.3.0.Final">
+              <point x="66.5" y="-9.666666666666629" />
+              <point x="335.0" y="775.0833333333331" />
+              <point x="415.0" y="759.7499999999998" />
+              <point x="856.0" y="759.7499999999998" />
+              <point x="-52.5" y="-10.875" />
+            </edge>
+            <edge source="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework:spring-context:jar:4.3.7.RELEASE" target="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework:spring-aop:jar:4.3.7.RELEASE">
+              <point x="54.5" y="10.875" />
+              <point x="856.0" y="1683.2499999999998" />
+              <point x="-45.0" y="-7.25" />
+            </edge>
+            <edge source="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE" target="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework:spring-aop:jar:4.3.7.RELEASE">
+              <point x="57.0" y="-1.4500000000000455" />
+              <point x="335.0" y="1813.1124999999997" />
+              <point x="415.0" y="1791.3749999999998" />
+              <point x="-45.0" y="7.25" />
+            </edge>
+            <edge source="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework.data:spring-data-commons:jar:1.13.1.RELEASE" target="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework.data:spring-data-commons:jar:1.13.1.RELEASE/org.slf4j:slf4j-api:jar:1.7.24">
+              <point x="76.0" y="10.875" />
+              <point x="647.0" y="1917.1785714285713" />
+              <point x="-37.0" y="-0.0" />
+            </edge>
+            <edge source="org.hibernate:hibernate-ehcache:jar:5.2.9.Final" target="org.hibernate:hibernate-core:jar:5.2.9.Final">
+              <point x="65.5" y="9.666666666666629" />
+              <point x="335.0" y="913.4166666666665" />
+              <point x="415.0" y="1241.4999999999998" />
+              <point x="-55.0" y="-7.25" />
+            </edge>
+            <edge source="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework:spring-orm:jar:4.3.7.RELEASE" target="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework:spring-beans:jar:4.3.7.RELEASE">
+              <point x="46.0" y="-10.875" />
+              <point x="567.0" y="1966.9910714285713" />
+              <point x="647.0" y="1946.3214285714284" />
+              <point x="1041.0" y="1946.3214285714284" />
+              <point x="-50.5" y="4.14285714285711" />
+            </edge>
+            <edge source="topjava:topjava:1.0-SNAPSHOT" target="ch.qos.logback:logback-classic:jar:1.2.2">
+              <point x="35.5" y="-7.975000000000023" />
+              <point x="151.0" y="290.5" />
+              <point x="-56.5" y="-0.0" />
+            </edge>
+            <edge source="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework:spring-aop:jar:4.3.7.RELEASE" target="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework:spring-core:jar:4.3.7.RELEASE">
+              <point x="45.0" y="-7.25" />
+              <point x="1246.0" y="1776.8749999999998" />
+              <point x="-46.5" y="-3.2222222222221717" />
+            </edge>
+            <edge source="org.hibernate:hibernate-core:jar:5.2.9.Final" target="org.hibernate:hibernate-core:jar:5.2.9.Final/dom4j:dom4j:jar:1.6.1">
+              <point x="55.0" y="-0.0" />
+              <point x="-33.0" y="-0.0" />
+            </edge>
+            <edge source="org.hibernate:hibernate-core:jar:5.2.9.Final" target="org.hibernate:hibernate-core:jar:5.2.9.Final/org.javassist:javassist:jar:3.20.0-GA">
+              <point x="55.0" y="9.666666666666742" />
+              <point x="567.0" y="1258.4166666666665" />
+              <point x="647.0" y="1446.1851311953346" />
+              <point x="-37.5" y="-0.0" />
+            </edge>
+            <edge source="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE" target="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework:spring-context:jar:4.3.7.RELEASE">
+              <point x="57.0" y="-10.150000000000091" />
+              <point x="335.0" y="1804.4124999999997" />
+              <point x="415.0" y="1672.3749999999998" />
+              <point x="-54.5" y="-0.0" />
+            </edge>
+            <edge source="topjava:topjava:1.0-SNAPSHOT" target="com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.8.8">
+              <point x="35.5" y="10.875" />
+              <point x="151.0" y="1531.9999999999998" />
+              <point x="-79.0" y="-0.0" />
+            </edge>
+            <edge source="com.fasterxml.jackson.datatype:jackson-datatype-hibernate5:jar:2.8.8" target="com.fasterxml.jackson.core:jackson-databind:jar:2.8.8.1/com.fasterxml.jackson.core:jackson-core:jar:2.8.8">
+              <point x="92.0" y="9.666666666666742" />
+              <point x="415.0" y="1446.083333333333" />
+              <point x="-50.0" y="-9.666666666666742" />
+            </edge>
+            <edge source="org.hibernate:hibernate-validator:jar:5.4.1.Final" target="org.hibernate:hibernate-validator:jar:5.4.1.Final/com.fasterxml:classmate:jar:1.3.1">
+              <point x="66.5" y="-0.0" />
+              <point x="-42.0" y="-0.0" />
+            </edge>
+            <edge source="topjava:topjava:1.0-SNAPSHOT" target="javax.el:javax.el-api:jar:3.0.0">
+              <point x="35.5" y="-0.7250000000000227" />
+              <point x="151.0" y="562.2499999999998" />
+              <point x="-45.5" y="-0.0" />
+            </edge>
+            <edge source="topjava:topjava:1.0-SNAPSHOT" target="org.springframework:spring-context-support:jar:unknown">
+              <point x="35.5" y="-13.774999999999977" />
+              <point x="151.0" y="14.5" />
+              <point x="-77.5" y="-0.0" />
+            </edge>
+            <edge source="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE" target="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.slf4j:slf4j-api:jar:1.7.25">
+              <point x="57.0" y="-7.25" />
+              <point x="335.0" y="1807.3124999999998" />
+              <point x="415.0" y="1697.3749999999998" />
+              <point x="-37.0" y="-0.0" />
+            </edge>
+            <edge source="org.hibernate:hibernate-ehcache:jar:5.2.9.Final" target="org.hibernate:hibernate-ehcache:jar:5.2.9.Final/net.sf.ehcache:ehcache:jar:2.10.3">
+              <point x="65.5" y="-0.0" />
+              <point x="-38.0" y="-0.0" />
+            </edge>
+            <edge source="org.hibernate:hibernate-ehcache:jar:5.2.9.Final" target="org.hibernate:hibernate-core:jar:5.2.9.Final/org.jboss.logging:jboss-logging:jar:3.3.0.Final">
+              <point x="65.5" y="-9.666666666666629" />
+              <point x="335.0" y="894.0833333333333" />
+              <point x="415.0" y="878.7499999999998" />
+              <point x="856.0" y="878.7499999999998" />
+              <point x="-52.5" y="-3.625" />
+            </edge>
+            <edge source="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework:spring-context:jar:4.3.7.RELEASE" target="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework:spring-beans:jar:4.3.7.RELEASE">
+              <point x="54.5" y="3.625" />
+              <point x="1041.0" y="1675.9999999999998" />
+              <point x="-50.5" y="-12.428571428571331" />
+            </edge>
+            <edge source="topjava:topjava:1.0-SNAPSHOT" target="com.fasterxml.jackson.core:jackson-databind:jar:2.8.8.1">
+              <point x="35.5" y="9.424999999999955" />
+              <point x="151.0" y="1462.9999999999998" />
+              <point x="-62.0" y="-0.0" />
+            </edge>
+            <edge source="org.hibernate:hibernate-core:jar:5.2.9.Final/org.hibernate.common:hibernate-commons-annotations:jar:5.0.1.Final" target="org.hibernate:hibernate-core:jar:5.2.9.Final/org.jboss.logging:jboss-logging:jar:3.3.0.Final">
+              <point x="104.5" y="-0.0" />
+              <point x="-52.5" y="3.625" />
+            </edge>
+            <edge source="com.fasterxml.jackson.core:jackson-databind:jar:2.8.8.1" target="com.fasterxml.jackson.core:jackson-databind:jar:2.8.8.1/com.fasterxml.jackson.core:jackson-annotations:jar:2.8.0">
+              <point x="62.0" y="7.25" />
+              <point x="335.0" y="1470.2499999999998" />
+              <point x="-70.0" y="-7.25" />
+            </edge>
+            <edge source="org.springframework:spring-web:jar:3.0.5.RELEASE" target="org.springframework:spring-web:jar:3.0.5.RELEASE/org.springframework:spring-core:jar:3.0.5.RELEASE">
+              <point x="46.0" y="-3.625" />
+              <point x="335.0" y="627.6249999999998" />
+              <point x="415.0" y="596.7499999999998" />
+              <point x="-46.5" y="-0.0" />
+            </edge>
+            <edge source="org.hibernate:hibernate-core:jar:5.2.9.Final" target="org.hibernate:hibernate-core:jar:5.2.9.Final/org.jboss.spec.javax.transaction:jboss-transaction-api_1.2_spec:jar:1.0.1.Final">
+              <point x="55.0" y="-3.2222222222221717" />
+              <point x="567.0" y="1245.5277777777776" />
+              <point x="-96.5" y="-0.0" />
+            </edge>
+            <edge source="org.hibernate:hibernate-core:jar:5.2.9.Final" target="org.hibernate:hibernate-core:jar:5.2.9.Final/org.jboss:jandex:jar:2.0.3.Final">
+              <point x="55.0" y="-6.444444444444343" />
+              <point x="567.0" y="1242.3055555555554" />
+              <point x="647.0" y="1110.7499999999998" />
+              <point x="-33.0" y="-0.0" />
+            </edge>
+            <edge source="topjava:topjava:1.0-SNAPSHOT" target="org.glassfish:javax.el:jar:3.0.0">
+              <point x="35.5" y="-2.1749999999999545" />
+              <point x="151.0" y="493.2499999999998" />
+              <point x="-35.0" y="-0.0" />
+            </edge>
+            <edge source="ch.qos.logback:logback-classic:jar:1.2.2" target="ch.qos.logback:logback-classic:jar:1.2.2/ch.qos.logback:logback-core:jar:1.2.2">
+              <point x="56.5" y="-7.25" />
+              <point x="-51.0" y="-0.0" />
+            </edge>
+            <edge source="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework:spring-context:jar:4.3.7.RELEASE/org.springframework:spring-expression:jar:4.3.7.RELEASE" target="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework:spring-core:jar:4.3.7.RELEASE">
+              <point x="62.5" y="-0.0" />
+              <point x="-46.5" y="-9.666666666666742" />
+            </edge>
+            <edge source="topjava:topjava:1.0-SNAPSHOT" target="org.apache.tomcat:tomcat-jdbc:jar:8.5.5">
+              <point x="35.5" y="-12.325000000000045" />
+              <point x="151.0" y="83.5" />
+              <point x="-49.0" y="-0.0" />
+            </edge>
+            <edge source="topjava:topjava:1.0-SNAPSHOT" target="org.apache.tomcat:tomcat-servlet-api:jar:8.5.5">
+              <point x="35.5" y="-10.875" />
+              <point x="151.0" y="152.5" />
+              <point x="-65.0" y="-0.0" />
+            </edge>
+            <edge source="org.slf4j:jul-to-slf4j:jar:1.7.25" target="org.slf4j:slf4j-api:jar:1.7.25">
+              <point x="43.5" y="-0.0" />
+              <point x="335.0" y="428.4999999999998" />
+              <point x="415.0" y="398.18513119533463" />
+              <point x="-37.0" y="3.625" />
+            </edge>
+            <edge source="topjava:topjava:1.0-SNAPSHOT" target="org.springframework:spring-webmvc:jar:unknown">
+              <point x="35.5" y="13.774999999999977" />
+              <point x="151.0" y="1883.5624999999998" />
+              <point x="-57.5" y="-0.0" />
+            </edge>
+            <edge source="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework:spring-orm:jar:4.3.7.RELEASE" target="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework:spring-orm:jar:4.3.7.RELEASE/org.springframework:spring-jdbc:jar:4.3.7.RELEASE">
+              <point x="46.0" y="3.625" />
+              <point x="567.0" y="1981.4910714285713" />
+              <point x="647.0" y="1990.3660714285713" />
+              <point x="-46.5" y="-0.0" />
+            </edge>
+            <edge source="topjava:topjava:1.0-SNAPSHOT" target="org.hibernate:hibernate-validator:jar:5.4.1.Final">
+              <point x="35.5" y="2.1749999999999545" />
+              <point x="151.0" y="784.7499999999998" />
+              <point x="-66.5" y="-0.0" />
+            </edge>
+            <edge source="org.hibernate:hibernate-core:jar:5.2.9.Final" target="org.hibernate:hibernate-core:jar:5.2.9.Final/org.jboss.logging:jboss-logging:jar:3.3.0.Final">
+              <point x="55.0" y="6.444444444444343" />
+              <point x="567.0" y="1255.1944444444441" />
+              <point x="647.0" y="1421.1851311953346" />
+              <point x="856.0" y="1421.1851311953346" />
+              <point x="-52.5" y="10.875" />
+            </edge>
+            <edge source="org.slf4j:jcl-over-slf4j:jar:1.7.25" target="org.slf4j:slf4j-api:jar:1.7.25">
+              <point x="49.0" y="-0.0" />
+              <point x="335.0" y="359.4999999999998" />
+              <point x="415.0" y="390.93513119533463" />
+              <point x="-37.0" y="-3.625" />
+            </edge>
+            <edge source="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE" target="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework:spring-core:jar:4.3.7.RELEASE">
+              <point x="57.0" y="-13.049999999999955" />
+              <point x="335.0" y="1801.5124999999998" />
+              <point x="415.0" y="1618.7499999999998" />
+              <point x="1246.0" y="1618.7499999999998" />
+              <point x="-46.5" y="-12.888888888888914" />
+            </edge>
+            <edge source="org.springframework:spring-web:jar:3.0.5.RELEASE" target="org.springframework:spring-web:jar:3.0.5.RELEASE/org.springframework:spring-context:jar:3.0.5.RELEASE">
+              <point x="46.0" y="-10.875" />
+              <point x="335.0" y="620.3749999999998" />
+              <point x="415.0" y="471.8749999999998" />
+              <point x="-54.5" y="-0.0" />
+            </edge>
+            <edge source="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework:spring-context:jar:4.3.7.RELEASE" target="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework:spring-core:jar:4.3.7.RELEASE">
+              <point x="54.5" y="-3.625" />
+              <point x="1246.0" y="1668.7499999999998" />
+              <point x="-46.5" y="-6.444444444444343" />
+            </edge>
+            <edge source="org.hibernate:hibernate-validator:jar:5.4.1.Final" target="org.hibernate:hibernate-validator:jar:5.4.1.Final/javax.validation:validation-api:jar:1.1.0.Final">
+              <point x="66.5" y="9.666666666666629" />
+              <point x="335.0" y="794.4166666666664" />
+              <point x="415.0" y="853.7499999999998" />
+              <point x="-52.5" y="-0.0" />
+            </edge>
+            <edge source="topjava:topjava:1.0-SNAPSHOT" target="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE">
+              <point x="35.5" y="12.325000000000045" />
+              <point x="151.0" y="1814.5624999999998" />
+              <point x="-57.0" y="-0.0" />
+            </edge>
+            <edge source="com.fasterxml.jackson.core:jackson-databind:jar:2.8.8.1" target="com.fasterxml.jackson.core:jackson-databind:jar:2.8.8.1/com.fasterxml.jackson.core:jackson-core:jar:2.8.8">
+              <point x="62.0" y="-7.25" />
+              <point x="-50.0" y="-0.0" />
+            </edge>
+            <edge source="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework:spring-context:jar:4.3.7.RELEASE" target="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework:spring-context:jar:4.3.7.RELEASE/org.springframework:spring-expression:jar:4.3.7.RELEASE">
+              <point x="54.5" y="-10.875" />
+              <point x="856.0" y="1661.4999999999998" />
+              <point x="936.0" y="1643.7499999999998" />
+              <point x="-62.5" y="-0.0" />
+            </edge>
+            <edge source="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE" target="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.aspectj:aspectjrt:jar:1.8.10">
+              <point x="57.0" y="-4.349999999999909" />
+              <point x="335.0" y="1810.2124999999999" />
+              <point x="415.0" y="1766.3749999999998" />
+              <point x="-38.5" y="-0.0" />
+            </edge>
+            <edge source="org.springframework:spring-web:jar:3.0.5.RELEASE" target="org.springframework:spring-web:jar:3.0.5.RELEASE/aopalliance:aopalliance:jar:1.0">
+              <point x="46.0" y="10.875" />
+              <point x="335.0" y="642.1249999999998" />
+              <point x="415.0" y="734.7499999999998" />
+              <point x="-46.0" y="-0.0" />
+            </edge>
+            <edge source="org.hibernate:hibernate-core:jar:5.2.9.Final" target="org.hibernate:hibernate-core:jar:5.2.9.Final/com.fasterxml:classmate:jar:1.3.0">
+              <point x="55.0" y="-9.666666666666742" />
+              <point x="567.0" y="1239.083333333333" />
+              <point x="647.0" y="1041.7499999999998" />
+              <point x="-42.0" y="-0.0" />
+            </edge>
+            <edge source="org.apache.tomcat:tomcat-jdbc:jar:8.5.5" target="org.apache.tomcat:tomcat-jdbc:jar:8.5.5/org.apache.tomcat:tomcat-juli:jar:8.5.5">
+              <point x="49.0" y="-0.0" />
+              <point x="-45.5" y="-0.0" />
+            </edge>
+            <edge source="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE" target="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework.data:spring-data-commons:jar:1.13.1.RELEASE">
+              <point x="57.0" y="1.4500000000000455" />
+              <point x="335.0" y="1816.0124999999998" />
+              <point x="-76.0" y="-0.0" />
+            </edge>
+            <edge source="topjava:topjava:1.0-SNAPSHOT" target="javax.servlet:jstl:jar:1.2">
+              <point x="35.5" y="-9.424999999999955" />
+              <point x="151.0" y="221.5" />
+              <point x="-23.5" y="-0.0" />
+            </edge>
+            <edge source="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE" target="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework:spring-tx:jar:4.3.7.RELEASE">
+              <point x="57.0" y="13.049999999999955" />
+              <point x="335.0" y="1827.6124999999997" />
+              <point x="415.0" y="2071.8660714285716" />
+              <point x="856.0" y="2071.8660714285716" />
+              <point x="936.0" y="2052.8869047619046" />
+              <point x="-39.5" y="9.666666666666515" />
+            </edge>
+            <edge source="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework:spring-orm:jar:4.3.7.RELEASE" target="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework:spring-tx:jar:4.3.7.RELEASE">
+              <point x="46.0" y="10.875" />
+              <point x="567.0" y="1988.7410714285713" />
+              <point x="647.0" y="2043.220238095238" />
+              <point x="-39.5" y="-0.0" />
+            </edge>
+            <edge source="com.fasterxml.jackson.datatype:jackson-datatype-hibernate5:jar:2.8.8" target="com.fasterxml.jackson.datatype:jackson-datatype-hibernate5:jar:2.8.8/javax.transaction:jta:jar:1.1">
+              <point x="92.0" y="-9.666666666666742" />
+              <point x="415.0" y="1317.7499999999998" />
+              <point x="-22.5" y="-0.0" />
+            </edge>
+            <edge source="topjava:topjava:1.0-SNAPSHOT" target="org.hibernate:hibernate-core:jar:5.2.9.Final">
+              <point x="35.5" y="5.0750000000000455" />
+              <point x="151.0" y="1255.9999999999998" />
+              <point x="-55.0" y="7.25" />
+            </edge>
+            <edge source="topjava:topjava:1.0-SNAPSHOT" target="org.hibernate:hibernate-ehcache:jar:5.2.9.Final">
+              <point x="35.5" y="3.625" />
+              <point x="151.0" y="903.7499999999998" />
+              <point x="-65.5" y="-0.0" />
+            </edge>
+            <edge source="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework:spring-aop:jar:4.3.7.RELEASE" target="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework:spring-beans:jar:4.3.7.RELEASE">
+              <point x="45.0" y="7.25" />
+              <point x="-50.5" y="-8.28571428571422" />
+            </edge>
+            <edge source="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework:spring-tx:jar:4.3.7.RELEASE" target="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework:spring-core:jar:4.3.7.RELEASE">
+              <point x="39.5" y="7.25" />
+              <point x="1246.0" y="2050.470238095238" />
+              <point x="-46.5" y="12.888888888888914" />
+            </edge>
+            <edge source="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework:spring-orm:jar:4.3.7.RELEASE/org.springframework:spring-jdbc:jar:4.3.7.RELEASE" target="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework:spring-core:jar:4.3.7.RELEASE">
+              <point x="46.5" y="-0.0" />
+              <point x="1246.0" y="1990.3660714285713" />
+              <point x="-46.5" y="9.666666666666742" />
+            </edge>
+            <edge source="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework.data:spring-data-commons:jar:1.13.1.RELEASE" target="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework:spring-core:jar:4.3.7.RELEASE">
+              <point x="76.0" y="-10.875" />
+              <point x="647.0" y="1809.1249999999998" />
+              <point x="1246.0" y="1809.1249999999998" />
+              <point x="-46.5" y="-0.0" />
+            </edge>
+            <edge source="topjava:topjava:1.0-SNAPSHOT" target="org.slf4j:jcl-over-slf4j:jar:1.7.25">
+              <point x="35.5" y="-6.524999999999977" />
+              <point x="151.0" y="359.4999999999998" />
+              <point x="-49.0" y="-0.0" />
+            </edge>
+            <edge source="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework.data:spring-data-commons:jar:1.13.1.RELEASE" target="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework.data:spring-data-commons:jar:1.13.1.RELEASE/org.slf4j:jcl-over-slf4j:jar:1.7.24">
+              <point x="76.0" y="3.625" />
+              <point x="647.0" y="1848.1785714285713" />
+              <point x="-49.0" y="-0.0" />
+            </edge>
+            <edge source="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE" target="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework:spring-orm:jar:4.3.7.RELEASE">
+              <point x="57.0" y="7.25" />
+              <point x="335.0" y="1821.8124999999998" />
+              <point x="415.0" y="1977.8660714285713" />
+              <point x="-46.0" y="-0.0" />
+            </edge>
+            <edge source="com.fasterxml.jackson.datatype:jackson-datatype-hibernate5:jar:2.8.8" target="com.fasterxml.jackson.datatype:jackson-datatype-hibernate5:jar:2.8.8/com.fasterxml.jackson.core:jackson-databind:jar:2.8.8">
+              <point x="92.0" y="-0.0" />
+              <point x="-62.0" y="-0.0" />
+            </edge>
+            <edge source="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE" target="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework:spring-beans:jar:4.3.7.RELEASE">
+              <point x="57.0" y="4.349999999999909" />
+              <point x="335.0" y="1818.9124999999997" />
+              <point x="415.0" y="1942.1785714285713" />
+              <point x="1041.0" y="1942.1785714285713" />
+              <point x="-50.5" y="-0.0" />
+            </edge>
+            <edge source="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework:spring-tx:jar:4.3.7.RELEASE" target="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework:spring-beans:jar:4.3.7.RELEASE">
+              <point x="39.5" y="-7.25" />
+              <point x="1041.0" y="2035.970238095238" />
+              <point x="-50.5" y="12.428571428571331" />
+            </edge>
+            <edge source="com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.8.8" target="com.fasterxml.jackson.core:jackson-databind:jar:2.8.8.1/com.fasterxml.jackson.core:jackson-annotations:jar:2.8.0">
+              <point x="79.0" y="-0.0" />
+              <point x="-70.0" y="7.25" />
+            </edge>
+            <edge source="ch.qos.logback:logback-classic:jar:1.2.2" target="org.slf4j:slf4j-api:jar:1.7.25">
+              <point x="56.5" y="7.25" />
+              <point x="335.0" y="297.75" />
+              <point x="415.0" y="383.68513119533463" />
+              <point x="-37.0" y="-10.875" />
+            </edge>
+            <edge source="com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.8.8" target="com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.8.8/com.fasterxml.jackson.core:jackson-databind:jar:2.8.8.1">
+              <point x="79.0" y="9.666666666666742" />
+              <point x="335.0" y="1541.6666666666665" />
+              <point x="415.0" y="1593.7499999999998" />
+              <point x="-62.0" y="-0.0" />
+            </edge>
+            <edge source="org.hibernate:hibernate-core:jar:5.2.9.Final" target="org.hibernate:hibernate-core:jar:5.2.9.Final/org.hibernate.javax.persistence:hibernate-jpa-2.1-api:jar:1.0.0.Final">
+              <point x="55.0" y="3.2222222222221717" />
+              <point x="567.0" y="1251.972222222222" />
+              <point x="647.0" y="1396.1851311953346" />
+              <point x="-72.0" y="-0.0" />
+            </edge>
+            <edge source="topjava:topjava:1.0-SNAPSHOT" target="org.postgresql:postgresql:jar:42.0.0">
+              <point x="35.5" y="6.524999999999977" />
+              <point x="151.0" y="1299.3749999999998" />
+              <point x="-43.5" y="-0.0" />
+            </edge>
+            <edge source="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework:spring-orm:jar:4.3.7.RELEASE/org.springframework:spring-jdbc:jar:4.3.7.RELEASE" target="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework:spring-beans:jar:4.3.7.RELEASE">
+              <point x="46.5" y="-9.666666666666742" />
+              <point x="1041.0" y="1978.5327380952378" />
+              <point x="-50.5" y="8.28571428571422" />
+            </edge>
+            <edge source="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework:spring-beans:jar:4.3.7.RELEASE" target="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework:spring-core:jar:4.3.7.RELEASE">
+              <point x="50.5" y="-0.0" />
+              <point x="-46.5" y="3.2222222222221717" />
+            </edge>
+            <edge source="org.springframework:spring-web:jar:3.0.5.RELEASE" target="org.springframework:spring-web:jar:3.0.5.RELEASE/org.springframework:spring-beans:jar:3.0.5.RELEASE">
+              <point x="46.0" y="3.625" />
+              <point x="335.0" y="634.8749999999998" />
+              <point x="415.0" y="665.7499999999998" />
+              <point x="-50.5" y="-0.0" />
+            </edge>
+            <edge source="com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.8.8" target="com.fasterxml.jackson.core:jackson-databind:jar:2.8.8.1/com.fasterxml.jackson.core:jackson-core:jar:2.8.8">
+              <point x="79.0" y="-9.666666666666742" />
+              <point x="335.0" y="1522.333333333333" />
+              <point x="415.0" y="1465.4166666666665" />
+              <point x="-50.0" y="9.666666666666742" />
+            </edge>
+            <edge source="topjava:topjava:1.0-SNAPSHOT" target="org.slf4j:slf4j-api:jar:1.7.25">
+              <point x="35.5" y="-3.625" />
+              <point x="151.0" y="453.4999999999998" />
+              <point x="335.0" y="453.4999999999998" />
+              <point x="415.0" y="405.43513119533463" />
+              <point x="-37.0" y="10.875" />
+            </edge>
+            <edge source="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework.data:spring-data-commons:jar:1.13.1.RELEASE" target="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework:spring-beans:jar:4.3.7.RELEASE">
+              <point x="76.0" y="-3.625" />
+              <point x="647.0" y="1823.1785714285713" />
+              <point x="1041.0" y="1823.1785714285713" />
+              <point x="-50.5" y="-4.14285714285711" />
+            </edge>
+            <edge source="topjava:topjava:1.0-SNAPSHOT" target="com.fasterxml.jackson.datatype:jackson-datatype-hibernate5:jar:2.8.8">
+              <point x="35.5" y="7.975000000000023" />
+              <point x="-92.0" y="-0.0" />
+            </edge>
+            <edge source="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework:spring-orm:jar:4.3.7.RELEASE/org.springframework:spring-jdbc:jar:4.3.7.RELEASE" target="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework:spring-tx:jar:4.3.7.RELEASE">
+              <point x="46.5" y="9.666666666666742" />
+              <point x="856.0" y="2000.032738095238" />
+              <point x="936.0" y="2033.5535714285713" />
+              <point x="-39.5" y="-9.666666666666742" />
+            </edge>
+            <edge source="topjava:topjava:1.0-SNAPSHOT" target="org.slf4j:jul-to-slf4j:jar:1.7.25">
+              <point x="35.5" y="-5.0750000000000455" />
+              <point x="151.0" y="428.4999999999998" />
+              <point x="-43.5" y="-0.0" />
+            </edge>
+            <edge source="org.hibernate:hibernate-core:jar:5.2.9.Final" target="org.hibernate:hibernate-core:jar:5.2.9.Final/org.hibernate.common:hibernate-commons-annotations:jar:5.0.1.Final">
+              <point x="55.0" y="-12.888888888888914" />
+              <point x="567.0" y="1235.8611111111109" />
+              <point x="-104.5" y="-0.0" />
+            </edge>
+            <edge source="org.hibernate:hibernate-core:jar:5.2.9.Final" target="org.hibernate:hibernate-core:jar:5.2.9.Final/antlr:antlr:jar:2.7.7">
+              <point x="55.0" y="12.888888888888914" />
+              <point x="567.0" y="1261.6388888888887" />
+              <point x="647.0" y="1515.1851311953346" />
+              <point x="-28.0" y="-0.0" />
+            </edge>
+            <edge source="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework:spring-orm:jar:4.3.7.RELEASE" target="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.springframework:spring-core:jar:4.3.7.RELEASE">
+              <point x="46.0" y="-3.625" />
+              <point x="567.0" y="1974.2410714285713" />
+              <point x="647.0" y="1965.3660714285713" />
+              <point x="1246.0" y="1965.3660714285713" />
+              <point x="-46.5" y="6.444444444444343" />
+            </edge>
+            <edge source="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE" target="org.springframework.data:spring-data-jpa:jar:1.11.1.RELEASE/org.slf4j:jcl-over-slf4j:jar:1.7.25">
+              <point x="57.0" y="10.150000000000091" />
+              <point x="335.0" y="1824.7124999999999" />
+              <point x="415.0" y="2046.8660714285713" />
+              <point x="-49.0" y="-0.0" />
+            </edge>
+            <edge source="topjava:topjava:1.0-SNAPSHOT" target="org.springframework:spring-web:jar:3.0.5.RELEASE">
+              <point x="35.5" y="0.7250000000000227" />
+              <point x="151.0" y="631.2499999999998" />
+              <point x="-46.0" y="-0.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.2614722753346082" x="392.0" y="89.0" />
+          <SelectedNodes>
+            <node>org.apache.tomcat:tomcat-jdbc:jar:8.5.5/org.apache.tomcat:tomcat-juli:jar:8.5.5</node>
+            <node>topjava:topjava:1.0-SNAPSHOT</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>All</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="674">
+          <caret line="271" column="31" lean-forward="true" selection-start-line="271" selection-start-column="31" selection-end-line="271" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/spring-aop-4.3.8.RELEASE.jar!/org/springframework/aop/framework/JdkDynamicAopProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/repository/DishRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/service/DishServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="44" column="40" lean-forward="true" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="40" />
+          <folding>
+            <element signature="e#1050#1051#0" expanded="false" />
+            <element signature="e#1098#1099#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/service/MenuService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/service/DishService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="14" column="37" lean-forward="false" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/controller/menu/AbstractMenuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="33" column="19" lean-forward="false" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#407#408#0" expanded="false" />
+            <element signature="e#450#451#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="19" lean-forward="false" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/main.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="21" lean-forward="false" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/controller/RootController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="11" lean-forward="true" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/controller/menu/MenuRestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="45" column="40" lean-forward="false" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/service/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+          <folding>
+            <element signature="e#718#719#0" expanded="true" />
+            <element signature="e#766#767#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/controller/dish/AbstractDishController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="13" column="4" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="39" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/service/UserScoreService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" column="27" lean-forward="false" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/controller/userscore/AbstractUserScoreController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="53" lean-forward="false" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/controller/dish/DishRestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="16" selection-end-column="97" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/model/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db/script.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="30" column="11" lean-forward="false" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db/populate_db.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/model/Dish.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="28" column="22" lean-forward="true" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/service/UserScoreServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="36" column="46" lean-forward="false" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
+          <folding>
+            <element signature="e#1076#1077#0" expanded="true" />
+            <element signature="e#1145#1146#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/service/MenuServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/repository/UserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/repository/UserScoreRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="14" column="27" lean-forward="false" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/repository/MenuRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/repository/jpa/JpaDishRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="717">
+          <caret line="51" column="111" lean-forward="true" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="111" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/repository/jpa/JpaUserScoreRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="717">
+          <caret line="51" column="135" lean-forward="false" selection-start-line="51" selection-start-column="135" selection-end-line="51" selection-end-column="135" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/repository/jpa/JpaMenuRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="49" column="80" lean-forward="true" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="80" />
+          <folding>
+            <element signature="e#1223#1224#0" expanded="true" />
+            <element signature="e#1310#1311#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/repository/jpa/JpaUserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="691">
+          <caret line="47" column="56" lean-forward="false" selection-start-line="47" selection-start-column="56" selection-end-line="47" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1186#1187#0" expanded="true" />
+            <element signature="e#1273#1274#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/model/Menu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/model/BaseEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/model/UserScore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/controller/user/AbstractUserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="36" lean-forward="true" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/controller/user/UserRestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="27" column="24" lean-forward="true" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/controller/userscore/UserScoreRestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="18" column="52" lean-forward="false" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/gradproject/topjava/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>GraduationProject:war exploded</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web|GraduationProject</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>jackson-databind-2.8.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
