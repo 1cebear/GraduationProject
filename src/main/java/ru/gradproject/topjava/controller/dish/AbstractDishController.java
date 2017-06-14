@@ -1,5 +1,6 @@
 package ru.gradproject.topjava.controller.dish;
 
+import ru.gradproject.topjava.ActiveMenu;
 import ru.gradproject.topjava.model.Dish;
 import org.springframework.beans.factory.annotation.Autowired;
 import ru.gradproject.topjava.service.DishService;
@@ -15,27 +16,47 @@ public abstract class AbstractDishController {
     private DishService dishService;
 
     public List<Dish> getAll() {
-        int menuId = 100000;
+        int menuId = ActiveMenu.id();
         return dishService.getAll(menuId);
     }
 
     public Dish get(int id) {
-        int menuId = 100000;
+        int menuId = ActiveMenu.id();
         return dishService.get(id, menuId);
     }
 
     public void delete(int id) {
-        int menuId = 100000;
+        int menuId = ActiveMenu.id();
         dishService.delete(id, menuId);
     }
 
     public Dish create(Dish dish) {
-        int menuId = 100000;
+        int menuId = ActiveMenu.id();
         return dishService.save(dish, menuId);
     }
 
     public void update(Dish dish, int id) {
-        int menuId = 100000;
+        int menuId = ActiveMenu.id();
+        dishService.update(dish, menuId);
+    }
+
+    public List<Dish> getAll(int menuId) {
+        return dishService.getAll(menuId);
+    }
+
+    public Dish get(int id, int menuId) {
+        return dishService.get(id, menuId);
+    }
+
+    public void delete(int id, int menuId) {
+        dishService.delete(id, menuId);
+    }
+
+    public Dish create(Dish dish, int menuId) {
+        return dishService.save(dish, menuId);
+    }
+
+    public void update(Dish dish, int id, int menuId) {
         dishService.update(dish, menuId);
     }
 }

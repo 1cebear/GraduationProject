@@ -26,19 +26,19 @@ public class MenuRestController extends AbstractMenuController{
 
     @Override
     @GetMapping("/{id}")
-    public Menu get(int id) {
+    public Menu get(@PathVariable("id") int id) {
         return super.get(id);
     }
 
     @Override
     @DeleteMapping("/{id}")
-    public void delete(int id) {
+    public void delete(@PathVariable("id") int id) {
         super.delete(id);
     }
 
     @Override
     @PutMapping(value = "/{id}", consumes = MediaType.APPLICATION_JSON_VALUE)
-    public void update(Menu menu, int id) {
+    public void update(@RequestBody Menu menu, @PathVariable("id") int id) {
         super.update(menu, id);
     }
 

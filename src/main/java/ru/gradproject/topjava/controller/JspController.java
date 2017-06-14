@@ -1,22 +1,23 @@
 package ru.gradproject.topjava.controller;
 
-/**
- * Created by Icebear on 06.06.2017.
- */
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import ru.gradproject.topjava.ActiveMenu;
-import ru.gradproject.topjava.ActiveUser;
 import ru.gradproject.topjava.service.DishService;
 import ru.gradproject.topjava.service.MenuService;
 
+import javax.servlet.http.HttpServletRequest;
+import java.util.Objects;
 
+/**
+ * Created by Icebear on 12.06.2017.
+ */
 @Controller
-public class RootController {
+@RequestMapping(value = "/main")
+public class JspController {
 
     @Autowired
     private DishService dishService;
@@ -24,21 +25,17 @@ public class RootController {
     @Autowired
     private MenuService menuService;
 
-    @RequestMapping(value = "/", method = RequestMethod.GET)
-    public String root() {
-        return "index";
-    }
-
-    @RequestMapping(value = "/main", method = RequestMethod.GET)
-    public String users(Model model) {
-        ActiveUser.setId(100000);
-        if (ActiveMenu.id() == 0) {
-            ActiveMenu.setId(100002);
-        }
+    @GetMapping("select")
+    public String select(HttpServletRequest request, Model model)
+    {
+        ActiveMenu.setId(getId(request));
         model.addAttribute("dishes", dishService.getAll(ActiveMenu.id()));
         model.addAttribute("menus", menuService.getAll());
-        return "main";
+        return "redirect:/main";
     }
 
+    private int getId(HttpServletRequest request) {
+        String paramId = Objects.requireNonNull(request.getParameter("id"));
+        return Integer.valueOf(paramId);
+    }
 }
-

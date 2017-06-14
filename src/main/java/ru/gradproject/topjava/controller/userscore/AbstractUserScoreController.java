@@ -1,6 +1,8 @@
 package ru.gradproject.topjava.controller.userscore;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import ru.gradproject.topjava.ActiveMenu;
+import ru.gradproject.topjava.ActiveUser;
 import ru.gradproject.topjava.model.UserScore;
 import ru.gradproject.topjava.service.UserScoreService;
 
@@ -14,32 +16,32 @@ public abstract class AbstractUserScoreController {
     private UserScoreService userScoreService;
 
     public List<UserScore> getAll() {
-        int userId = 100000;
-        int menuId = 100000;
+        int userId = ActiveUser.id();
+        int menuId = ActiveMenu.id();
         return userScoreService.getAll(userId, menuId);
     }
 
     public UserScore get(int id) {
-        int userId = 100000;
-        int menuId = 100000;
+        int userId = ActiveUser.id();
+        int menuId = ActiveMenu.id();
         return userScoreService.get(id, userId, menuId);
     }
 
     public void delete(int id) {
-        int userId = 100000;
-        int menuId = 100000;
+        int userId = ActiveUser.id();
+        int menuId = ActiveMenu.id();
         userScoreService.delete(id, userId, menuId);
     }
 
     public UserScore create(UserScore userScore) {
-        int userId = 100000;
-        int menuId = 100000;
+        int userId = ActiveUser.id();
+        int menuId = ActiveMenu.id();
         return userScoreService.save(userScore,userId, menuId);
     }
 
     public void update(UserScore userScore, int id) {
-        int userId = 100000;
-        int menuId = 100000;
+        int userId = ActiveUser.id();
+        int menuId = ActiveMenu.id();
         userScoreService.update(userScore, userId, menuId);
     }
 }

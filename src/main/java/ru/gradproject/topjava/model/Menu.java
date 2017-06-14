@@ -1,6 +1,7 @@
 package ru.gradproject.topjava.model;
 
 import org.hibernate.validator.constraints.NotBlank;
+import ru.gradproject.topjava.ActiveMenu;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
@@ -66,5 +67,9 @@ public class Menu extends BaseEntity {
 
     public void setMenuDate(LocalDateTime menuDate) {
         this.menuDate = menuDate;
+    }
+
+    public boolean isActive() {
+        return (getId() == ActiveMenu.id());
     }
 }

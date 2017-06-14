@@ -19,27 +19,27 @@ public class DishRestController extends AbstractDishController {
     static final String REST_URL = "/rest/dishes";
 
     @Override
-    @GetMapping
-    public List<Dish> getAll() {
-        return super.getAll();
+    @GetMapping("/menus/{menuId}")
+    public List<Dish> getAll(@PathVariable("menuId") int menuId) {
+        return super.getAll(menuId);
     }
 
     @Override
-    @GetMapping("/{id}")
-    public Dish get(int id) {
-        return super.get(id);
+    @GetMapping("/menus/{menuId}/{id}")
+    public Dish get(@PathVariable("menuId") int menuId, @PathVariable("id") int id) {
+        return super.get(id, menuId);
     }
 
     @Override
-    @DeleteMapping("/{id}")
-    public void delete(int id) {
-        super.delete(id);
+    @DeleteMapping("/menus/{menuId}/{id}")
+    public void delete(@PathVariable("menuId") int menuId, @PathVariable("id") int id) {
+        super.delete(id, menuId);
     }
 
     @Override
-    @PutMapping(value = "/{id}", consumes = MediaType.APPLICATION_JSON_VALUE)
-    public void update(Dish dish, int id) {
-        super.update(dish, id);
+    @PutMapping(value = "/menus/{menuId}/{id}", consumes = MediaType.APPLICATION_JSON_VALUE)
+    public void update(@RequestBody Dish dish,@PathVariable("menuId") int menuId, @PathVariable("id")  int id) {
+        super.update(dish, id, menuId);
     }
 
     public ResponseEntity<Dish> createWithLocation(@RequestBody Dish dish) {
