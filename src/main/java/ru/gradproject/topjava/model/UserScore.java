@@ -12,13 +12,17 @@ import javax.validation.constraints.NotNull;
 @SuppressWarnings("JpaQlInspection")
 @NamedQueries({
         @NamedQuery(name = UserScore.ALL_SORTED, query = "SELECT us FROM UserScore us WHERE us.menu.id=:menuId AND us.user.id=:userId"),
-        @NamedQuery(name = UserScore.DELETE, query = "DELETE FROM UserScore us WHERE us.id=:id AND us.menu.id=:menuId AND us.user.id=:userId")
+        @NamedQuery(name = UserScore.DELETE, query = "DELETE FROM UserScore us WHERE us.id=:id AND us.menu.id=:menuId AND us.user.id=:userId"),
+        @NamedQuery(name = UserScore.All_BY_USER, query = "SELECT us FROM UserScore us WHERE us.user.id=:userId"),
+        @NamedQuery(name = UserScore.ALL_BY_MENU, query = "SELECT us FROM UserScore us WHERE us.menu.id=:menuId")
 })
 @Entity
 @Table(name = "userscores")
 public class UserScore extends BaseEntity {
 
     public static final String ALL_SORTED = "UserScore.getAll";
+    public static final String All_BY_USER = "UserScore.getAllByYUser";
+    public static final String ALL_BY_MENU = "UserScore.getAllByMenu";
     public static final String DELETE = "UserScore.delete";
 
     @ManyToOne(fetch = FetchType.LAZY)

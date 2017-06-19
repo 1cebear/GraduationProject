@@ -4,6 +4,7 @@ import org.springframework.stereotype.Service;
 import ru.gradproject.topjava.model.Menu;
 import ru.gradproject.topjava.repository.MenuRepository;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 /**
@@ -24,6 +25,10 @@ public class MenuServiceImpl implements MenuService {
 
     @Override
     public Menu save(Menu menu) {
+        if(menu.isNew())
+        {
+            menu.setMenuDate(LocalDateTime.now());
+        }
         return menuRepository.save(menu);
     }
 

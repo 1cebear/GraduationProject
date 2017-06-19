@@ -16,28 +16,28 @@ import java.util.List;
 @RestController
 @RequestMapping(value = DishRestController.REST_URL, produces = MediaType.APPLICATION_JSON_VALUE)
 public class DishRestController extends AbstractDishController {
-    static final String REST_URL = "/rest/dishes";
+    static final String REST_URL = "/rest//menus/{menuId}/dishes";
 
     @Override
-    @GetMapping("/menus/{menuId}")
+    @GetMapping("")
     public List<Dish> getAll(@PathVariable("menuId") int menuId) {
         return super.getAll(menuId);
     }
 
     @Override
-    @GetMapping("/menus/{menuId}/{id}")
+    @GetMapping("/{id}")
     public Dish get(@PathVariable("menuId") int menuId, @PathVariable("id") int id) {
         return super.get(id, menuId);
     }
 
     @Override
-    @DeleteMapping("/menus/{menuId}/{id}")
+    @DeleteMapping("/{id}")
     public void delete(@PathVariable("menuId") int menuId, @PathVariable("id") int id) {
         super.delete(id, menuId);
     }
 
     @Override
-    @PutMapping(value = "/menus/{menuId}/{id}", consumes = MediaType.APPLICATION_JSON_VALUE)
+    @PutMapping(value = "/{id}", consumes = MediaType.APPLICATION_JSON_VALUE)
     public void update(@RequestBody Dish dish,@PathVariable("menuId") int menuId, @PathVariable("id")  int id) {
         super.update(dish, id, menuId);
     }

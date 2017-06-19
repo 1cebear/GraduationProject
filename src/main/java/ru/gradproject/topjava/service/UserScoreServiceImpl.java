@@ -3,7 +3,9 @@ package ru.gradproject.topjava.service;
 import org.springframework.stereotype.Service;
 import ru.gradproject.topjava.model.UserScore;
 import ru.gradproject.topjava.repository.UserScoreRepository;
+import ru.gradproject.topjava.util.exception.UserScoreTimeException;
 
+import java.time.LocalTime;
 import java.util.List;
 
 /**
@@ -29,6 +31,10 @@ public class UserScoreServiceImpl implements UserScoreService {
 
     @Override
     public UserScore update(UserScore userScore, int userid, int menuId) {
+        if(LocalTime.now().compareTo(LocalTime.of(11, 0, 0))>0)
+        {
+            throw new UserScoreTimeException("Vote can't be changed after 11:00");
+        }
         return userScoreRepository.save(userScore, userid, menuId);
     }
 
@@ -38,7 +44,7 @@ public class UserScoreServiceImpl implements UserScoreService {
     }
 
     @Override
-    public List<UserScore> getAll(int userId, int menuId) {
+    public List<UserScore> getAll(Integer userId, Integer menuId) {
         return userScoreRepository.getAll(userId, menuId);
     }
 }

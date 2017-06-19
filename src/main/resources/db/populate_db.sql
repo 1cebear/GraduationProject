@@ -1,3 +1,4 @@
+DELETE FROM userscores;
 DELETE FROM users;
 DELETE FROM dishes;
 DELETE FROM menu;
@@ -15,4 +16,7 @@ INSERT INTO dishes (name, menu_id, price)
 VALUES ('fish', 100002, 50),
   ('jam', 100002, 200),
   ('soupe', 100003, 125),
-  ('cake', 100003, 75)
+  ('cake', 100003, 75);
+
+INSERT INTO userscores (menu_id, user_id, score)
+VALUES (100002, 100000, 5);

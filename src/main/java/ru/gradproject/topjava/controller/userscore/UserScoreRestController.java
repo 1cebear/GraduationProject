@@ -26,19 +26,19 @@ public class UserScoreRestController extends AbstractUserScoreController {
 
     @Override
     @GetMapping("/{id}")
-    public UserScore get(int id) {
+    public UserScore get(@PathVariable("id")  int id) {
         return super.get(id);
     }
 
     @Override
     @DeleteMapping("/{id}")
-    public void delete(int id) {
+    public void delete(@PathVariable("id") int id) {
         super.delete(id);
     }
 
     @Override
     @PutMapping(value = "/{id}", consumes = MediaType.APPLICATION_JSON_VALUE)
-    public void update(UserScore userScore, int id) {
+    public void update(UserScore userScore, @PathVariable("id") int id) {
         super.update(userScore, id);
     }
 
@@ -49,4 +49,15 @@ public class UserScoreRestController extends AbstractUserScoreController {
                 .buildAndExpand(created.getId()).toUri();
         return ResponseEntity.created(uriOfNewResource).body(created);
     }
+
+    @GetMapping("/user/{id}")
+    public List<UserScore> getAllByUser(@PathVariable("id") int userId) {
+        return super.getAll(null, userId);
+    }
+
+    @GetMapping("/menu/{id}")
+    public List<UserScore> getAllByMenu(@PathVariable("id") int menuId) {
+        return super.getAll(menuId, null);
+    }
+
 }

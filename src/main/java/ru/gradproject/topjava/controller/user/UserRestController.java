@@ -26,19 +26,19 @@ public class UserRestController extends AbstractUserController {
 
     @Override
     @GetMapping("/{id}")
-    public User get(int id) {
+    public User get(@PathVariable("id") int id) {
         return super.get(id);
     }
 
     @Override
     @DeleteMapping("/{id}")
-    public void delete(int id) {
+    public void delete(@PathVariable("id") int id) {
         super.delete(id);
     }
 
     @Override
     @PutMapping(value = "/{id}", consumes = MediaType.APPLICATION_JSON_VALUE)
-    public void update(User user, int id) {
+    public void update(@RequestBody User user, @PathVariable("id") int id) {
         super.update(user, id);
     }
 

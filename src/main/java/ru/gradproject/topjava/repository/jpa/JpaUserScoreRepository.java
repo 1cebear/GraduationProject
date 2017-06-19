@@ -9,6 +9,7 @@ import ru.gradproject.topjava.repository.UserScoreRepository;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.validation.constraints.Null;
 import java.util.List;
 
 /**
@@ -48,7 +49,13 @@ public class JpaUserScoreRepository implements UserScoreRepository {
     }
 
     @Override
-    public List<UserScore> getAll(int userId, int menuId) {
-        return em.createNamedQuery(UserScore.ALL_SORTED, UserScore.class).setParameter("menuId", menuId).setParameter("userId", userId).getResultList();
+    public List<UserScore> getAll(Integer userId, Integer menuId) {
+        if (userId == null) {
+            return em.createNamedQuery(UserScore.ALL_BY_MENU, UserScore.class).setParameter("menuId", menuId).getResultList();
+        } else if (menuId == null) {
+            return em.createNamedQuery(UserScore.All_BY_USER, UserScore.class).setParameter("userId", userId).getResultList();
+        } else {
+            return em.createNamedQuery(UserScore.ALL_SORTED, UserScore.class).setParameter("menuId", menuId).setParameter("userId", userId).getResultList();
+        }
     }
 }

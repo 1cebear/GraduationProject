@@ -16,5 +16,5 @@ public interface UserScoreService {
 
     boolean delete(int id, int userId, int menuId);
 
-    List<UserScore> getAll(int userId, int menuId);
+    List<UserScore> getAll(Integer userId, Integer menuId);
 }

@@ -44,4 +44,8 @@ public abstract class AbstractUserScoreController {
         int menuId = ActiveMenu.id();
         userScoreService.update(userScore, userId, menuId);
     }
+
+    public List<UserScore> getAll(Integer menuId, Integer userId) {
+        return userScoreService.getAll(userId, menuId);
+    }
 }
