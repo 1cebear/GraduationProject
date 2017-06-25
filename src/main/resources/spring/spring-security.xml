@@ -16,6 +16,21 @@
         <csrf disabled="true"/>
     </http>
 
+
+    <http>
+        <intercept-url pattern="/index" access="isAnonymous()"/>
+
+        <intercept-url pattern="/**/admin/**" access="hasRole('ROLE_ADMIN')"/>
+        <intercept-url pattern="/**" access="isAuthenticated()"/>
+
+        <form-login login-page="/index" default-target-url="/main"
+                    authentication-failure-url="/index?error=true"
+                    login-processing-url="/spring_security_check"/>
+        <logout logout-success-url="/index"/>
+        <csrf disabled="true"/>
+    </http>
+
+
     <authentication-manager>
         <authentication-provider>
             <user-service>
