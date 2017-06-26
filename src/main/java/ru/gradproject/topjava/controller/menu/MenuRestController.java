@@ -15,31 +15,31 @@ import java.util.List;
  */
 @RestController
 @RequestMapping(value = MenuRestController.REST_URL, produces = MediaType.APPLICATION_JSON_VALUE)
-public class MenuRestController extends AbstractMenuController{
-    static final String REST_URL = "/rest/menus";
+public class MenuRestController extends AbstractMenuController {
+    static final String REST_URL = "/rest/restaurants/{restaurantId}/menus";
 
     @Override
     @GetMapping
-    public List<Menu> getAll() {
-        return super.getAll();
+    public List<Menu> getAll(@PathVariable("restaurantId") int restaurantId) {
+        return super.getAll(restaurantId);
     }
 
     @Override
     @GetMapping("/{id}")
-    public Menu get(@PathVariable("id") int id) {
-        return super.get(id);
+    public Menu get(@PathVariable("id") int id, @PathVariable("restaurantId") int restaurantId) {
+        return super.get(id, restaurantId);
     }
 
     @Override
     @DeleteMapping("/{id}")
-    public void delete(@PathVariable("id") int id) {
-        super.delete(id);
+    public void delete(@PathVariable("id") int id, @PathVariable("restaurantId") int restaurantId) {
+        super.delete(id, restaurantId);
     }
 
     @Override
     @PutMapping(value = "/{id}", consumes = MediaType.APPLICATION_JSON_VALUE)
-    public void update(@RequestBody Menu menu, @PathVariable("id") int id) {
-        super.update(menu, id);
+    public void update(@RequestBody Menu menu, @PathVariable("id") int id, @PathVariable("restaurantId") int restaurantId) {
+        super.update(menu, restaurantId, id);
     }
 
     public ResponseEntity<Menu> createWithLocation(@RequestBody Menu menu) {

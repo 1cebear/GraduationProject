@@ -27,9 +27,6 @@ public class JpaUserRepository implements UserRepository {
 
     @Override
     public User save(User user) {
-        if (!user.isNew()) {
-            return null;
-        }
         if (user.isNew()) {
             em.persist(user);
             return user;

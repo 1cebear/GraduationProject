@@ -8,11 +8,11 @@ import java.util.List;
  * Created by Icebear on 04.06.2017.
  */
 public interface DishRepository {
-    Dish get(int id, int MenuId);
+    Dish get(int id, int menuId);
 
     Dish save(Dish dish, int menuId);
 
-    boolean delete(int id, int MenuId);
+    boolean delete(int id, int menuId);
 
-    List<Dish> getAll(int MenuId);
+    List<Dish> getAll(int menuId);
 }

@@ -6,6 +6,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import ru.gradproject.topjava.ActiveMenu;
+import ru.gradproject.topjava.ActiveRestaurant;
 import ru.gradproject.topjava.service.DishService;
 import ru.gradproject.topjava.service.MenuService;
 
@@ -25,12 +26,12 @@ public class JspController {
     @Autowired
     private MenuService menuService;
 
-    @GetMapping("select")
-    public String select(HttpServletRequest request, Model model)
+    @GetMapping("selectMenu")
+    public String selectMenu(HttpServletRequest request, Model model)
     {
         ActiveMenu.setId(getId(request));
         model.addAttribute("dishes", dishService.getAll(ActiveMenu.id()));
-        model.addAttribute("menus", menuService.getAll());
+        model.addAttribute("menus", menuService.getAll(ActiveRestaurant.id()));
         return "redirect:/main";
     }
 

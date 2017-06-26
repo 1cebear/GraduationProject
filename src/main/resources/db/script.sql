@@ -2,6 +2,7 @@ DROP TABLE IF EXISTS user_roles;
 DROP TABLE IF EXISTS dishes;
 DROP TABLE IF EXISTS userscores;
 DROP TABLE IF EXISTS menu;
+DROP TABLE IF EXISTS restaurant;
 DROP TABLE IF EXISTS users;
 DROP SEQUENCE IF EXISTS global_seq;
 
@@ -27,10 +28,17 @@ CREATE TABLE user_roles
   FOREIGN KEY (user_id) REFERENCES users (id) ON DELETE CASCADE
 );
 
-CREATE TABLE menu (
+CREATE TABLE restaurant (
   id        INTEGER PRIMARY KEY DEFAULT nextval('global_seq'),
-  name      VARCHAR   NOT NULL,
-  date_time TIMESTAMP NOT NULL
+  name      VARCHAR   NOT NULL
+);
+
+CREATE TABLE menu (
+  id            INTEGER PRIMARY KEY DEFAULT nextval('global_seq'),
+  restaurant_id INTEGER   NOT NULL,
+  name          VARCHAR   NOT NULL,
+  date_time     TIMESTAMP NOT NULL,
+  FOREIGN KEY (restaurant_id) REFERENCES restaurant (id) ON DELETE CASCADE
 );
 
 CREATE TABLE dishes (
@@ -45,7 +53,7 @@ CREATE TABLE userscores (
   id      INTEGER PRIMARY KEY DEFAULT nextval('global_seq'),
   menu_id INTEGER NOT NULL,
   user_id INTEGER NOT NULL,
-  score INTEGER NOT NULL,
+  score   INTEGER NOT NULL,
   FOREIGN KEY (menu_id) REFERENCES menu (id),
   FOREIGN KEY (user_id) REFERENCES users (id)
 );

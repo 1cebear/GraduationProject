@@ -39,7 +39,7 @@ public class RootController {
     public String users(Model model) {
         ActiveUser.setId(100000);
         if (ActiveMenu.id() == 0) {
-            ActiveMenu.setId(100002);
+            ActiveMenu.setId(100004);
         }
         model.addAttribute("dishes", dishService.getAll(ActiveMenu.id()));
         model.addAttribute("menus", menuService.getAll());

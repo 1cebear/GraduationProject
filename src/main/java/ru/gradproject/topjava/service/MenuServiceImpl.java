@@ -19,31 +19,30 @@ public class MenuServiceImpl implements MenuService {
     }
 
     @Override
-    public Menu get(int id) {
-        return menuRepository.get(id);
+    public Menu get(int id, int restaurantId) {
+        return menuRepository.get(id, restaurantId);
     }
 
     @Override
-    public Menu save(Menu menu) {
-        if(menu.isNew())
-        {
+    public Menu save(Menu menu, int restaurantId) {
+        if (menu.isNew()) {
             menu.setMenuDate(LocalDateTime.now());
         }
-        return menuRepository.save(menu);
+        return menuRepository.save(menu, restaurantId);
     }
 
     @Override
-    public Menu update(Menu menu) {
-        return menuRepository.save(menu);
+    public Menu update(Menu menu, int restaurantId) {
+        return menuRepository.save(menu, restaurantId);
     }
 
     @Override
-    public boolean delete(int id) {
-        return menuRepository.delete(id);
+    public boolean delete(int id, int restaurantId) {
+        return menuRepository.delete(id, restaurantId);
     }
 
     @Override
-    public List<Menu> getAll() {
-        return menuRepository.getAll();
+    public List<Menu> getAll(int restaurantId) {
+        return menuRepository.getAll(restaurantId);
     }
 }
