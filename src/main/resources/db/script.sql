@@ -57,3 +57,5 @@ CREATE TABLE userscores (
   FOREIGN KEY (menu_id) REFERENCES menu (id),
   FOREIGN KEY (user_id) REFERENCES users (id)
 );
+
+CREATE UNIQUE INDEX userscores_unique_vote_idx ON userscores (user_id, menu_id);

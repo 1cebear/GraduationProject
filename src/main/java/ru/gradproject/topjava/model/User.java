@@ -13,6 +13,7 @@ import java.util.Set;
  */
 @NamedQueries({
         @NamedQuery(name = User.ALL_SORTED, query = "SELECT u FROM User u"),
+        @NamedQuery(name = User.BY_EMAIL, query = "SELECT DISTINCT u FROM User u LEFT JOIN FETCH u.roles WHERE u.email=?1"),
         @NamedQuery(name = User.DELETE, query = "DELETE FROM User u WHERE u.id=:id")
 })
 @Entity
@@ -21,6 +22,7 @@ public class User extends BaseEntity {
 
     public static final String DELETE = "User.delete";
     public static final String ALL_SORTED = "User.getAll";
+    public static final String BY_EMAIL = "User.getByEmail";
 
     @Column(name = "name", nullable = false)
     @NotBlank
@@ -36,9 +38,11 @@ public class User extends BaseEntity {
     @Length(min = 5)
     private String password;
 
+    @Enumerated(EnumType.STRING)
     @CollectionTable(name = "user_roles", joinColumns = @JoinColumn(name = "user_id"))
     @Column(name = "role")
     @ElementCollection(fetch = FetchType.EAGER)
+//    @Fetch(FetchMode.SUBSELECT)
     @BatchSize(size = 200)
     private Set<Role> roles;
 
@@ -84,4 +88,5 @@ public class User extends BaseEntity {
     public void setRoles(Set<Role> roles) {
         this.roles = roles;
     }
+
 }
