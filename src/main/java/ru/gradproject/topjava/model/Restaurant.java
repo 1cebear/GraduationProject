@@ -1,6 +1,7 @@
 package ru.gradproject.topjava.model;
 
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import org.hibernate.validator.constraints.NotBlank;
 
 import javax.persistence.*;
@@ -24,7 +25,8 @@ public class Restaurant extends BaseEntity{
     @NotBlank
     private String name;
 
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "restaurant")
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "restaurant")
+    @JsonManagedReference
     private Set<Menu> menus;
 
     public Set<Menu> getMenus() {
@@ -44,6 +46,7 @@ public class Restaurant extends BaseEntity{
     }
 
     public Restaurant() {
+        super();
     }
 
     public Restaurant(Integer id, String name) {

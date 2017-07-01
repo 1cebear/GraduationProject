@@ -15,7 +15,7 @@ import java.util.List;
 @RestController
 @RequestMapping(value = RestaurantRestController.REST_URL, produces = MediaType.APPLICATION_JSON_VALUE)
 public class RestaurantRestController extends AbstractRestaurantController{
-    static final String REST_URL = "/rest/restaurants";
+    public static final String REST_URL = "/rest/restaurants";
 
     @Override
     @GetMapping
@@ -41,6 +41,7 @@ public class RestaurantRestController extends AbstractRestaurantController{
         super.update(restaurant, id);
     }
 
+    @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Restaurant> createWithLocation(@RequestBody Restaurant restaurant) {
         Restaurant created = super.create(restaurant);
         URI uriOfNewResource = ServletUriComponentsBuilder.fromCurrentContextPath()

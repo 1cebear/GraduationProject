@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import ru.gradproject.topjava.ActiveMenu;
+import ru.gradproject.topjava.ActiveRestaurant;
 import ru.gradproject.topjava.ActiveUser;
 import ru.gradproject.topjava.service.DishService;
 import ru.gradproject.topjava.service.MenuService;
@@ -42,7 +43,7 @@ public class RootController {
             ActiveMenu.setId(100004);
         }
         model.addAttribute("dishes", dishService.getAll(ActiveMenu.id()));
-        model.addAttribute("menus", menuService.getAll());
+        model.addAttribute("menus", menuService.getAll(ActiveRestaurant.id()));
         return "main";
     }
 

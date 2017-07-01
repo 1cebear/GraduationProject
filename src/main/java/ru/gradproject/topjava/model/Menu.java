@@ -1,5 +1,7 @@
 package ru.gradproject.topjava.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
 import org.hibernate.validator.constraints.NotBlank;
@@ -24,12 +26,14 @@ public class Menu extends BaseEntity {
     public static final String DELETE = "Menu.delete";
     public static final String ALL_SORTED = "Menu.getAll";
 
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "menu")
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "menu")
+    @JsonManagedReference
     private Set<Dish> dishes;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "restaurant_id", nullable = false)
     @OnDelete(action = OnDeleteAction.CASCADE)
+    @JsonBackReference
     @NotNull
     private Restaurant restaurant;
 
@@ -42,6 +46,7 @@ public class Menu extends BaseEntity {
     private String name;
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "menu")
+    @JsonManagedReference
     private Set<UserScore> userScores;
 
     public Set<UserScore> getUserScores() {
@@ -87,4 +92,25 @@ public class Menu extends BaseEntity {
     public void setRestaurant(Restaurant restaurant) {
         this.restaurant = restaurant;
     }
+
+    public Menu(String name)
+    {
+        super();
+        this.name = name;
+    }
+
+    public Menu()
+    {
+        super();
+    }
+
+    public Menu(int id, String name, Restaurant restaurant, LocalDateTime localDateTime)
+    {
+        super(id);
+        this.name = name;
+        this.restaurant = restaurant;
+        this.menuDate = localDateTime;
+    }
+
+
 }

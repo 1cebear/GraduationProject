@@ -28,9 +28,6 @@ public class JpaRestaurantRepository implements RestaurantRepository {
     @Override
     @Transactional
     public Restaurant save(Restaurant restaurant) {
-        if (!restaurant.isNew()) {
-            return null;
-        }
         if (restaurant.isNew()) {
             em.persist(restaurant);
             return restaurant;
@@ -41,7 +38,7 @@ public class JpaRestaurantRepository implements RestaurantRepository {
 
     @Override
     public boolean delete(int id) {
-        return em.createNamedQuery(Restaurant.DELETE, Restaurant.class).setParameter("id", id).executeUpdate() != 0;
+        return em.createNamedQuery(Restaurant.DELETE).setParameter("id", id).executeUpdate() != 0;
     }
 
     @Override

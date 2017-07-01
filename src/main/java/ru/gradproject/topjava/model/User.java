@@ -1,5 +1,6 @@
 package ru.gradproject.topjava.model;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import org.hibernate.annotations.BatchSize;
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.Length;
@@ -51,6 +52,7 @@ public class User extends BaseEntity {
     }
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "menu")
+    @JsonManagedReference
     private Set<UserScore> userScores;
 
     public Set<UserScore> getUserScores() {

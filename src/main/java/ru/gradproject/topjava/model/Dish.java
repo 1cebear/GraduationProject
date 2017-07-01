@@ -1,5 +1,6 @@
 package ru.gradproject.topjava.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
 import org.hibernate.validator.constraints.Range;
@@ -22,9 +23,10 @@ public class Dish extends BaseEntity {
     public static final String ALL_SORTED = "Dish.getAll";
     public static final String DELETE = "Dish.delete";
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "menu_id", nullable = false)
     @OnDelete(action = OnDeleteAction.CASCADE)
+    @JsonBackReference
     @NotNull
     private Menu menu;
 

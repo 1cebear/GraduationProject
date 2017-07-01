@@ -54,8 +54,8 @@ CREATE TABLE userscores (
   menu_id INTEGER NOT NULL,
   user_id INTEGER NOT NULL,
   score   INTEGER NOT NULL,
-  FOREIGN KEY (menu_id) REFERENCES menu (id),
-  FOREIGN KEY (user_id) REFERENCES users (id)
+  FOREIGN KEY (menu_id) REFERENCES menu (id) ON DELETE CASCADE,
+  FOREIGN KEY (user_id) REFERENCES users (id) ON DELETE CASCADE
 );
 
 CREATE UNIQUE INDEX userscores_unique_vote_idx ON userscores (user_id, menu_id);

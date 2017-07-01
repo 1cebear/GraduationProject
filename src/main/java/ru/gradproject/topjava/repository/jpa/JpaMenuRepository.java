@@ -44,7 +44,7 @@ public class JpaMenuRepository implements MenuRepository {
     @Override
     @Transactional
     public boolean delete(int id, int restaurantId) {
-        return em.createNamedQuery(Menu.DELETE, Menu.class).setParameter("id", id).setParameter("restaurant_id", restaurantId).executeUpdate() != 0;
+        return em.createNamedQuery(Menu.DELETE).setParameter("id", id).setParameter("restaurant_id", restaurantId).executeUpdate() != 0;
     }
 
     @Override
