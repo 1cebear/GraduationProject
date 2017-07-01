@@ -45,7 +45,7 @@ public class JpaUserScoreRepository implements UserScoreRepository {
 
     @Override
     public boolean delete(int id, int userId, int menuId) {
-        return em.createNamedQuery(UserScore.DELETE, UserScore.class).setParameter("menuId", menuId).setParameter("userId", userId).setParameter("id", id).executeUpdate() != 0;
+        return em.createNamedQuery(UserScore.DELETE).setParameter("menuId", menuId).setParameter("userId", userId).setParameter("id", id).executeUpdate() != 0;
     }
 
     @Override
