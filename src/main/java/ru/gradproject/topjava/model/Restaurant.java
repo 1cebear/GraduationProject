@@ -49,8 +49,9 @@ public class Restaurant extends BaseEntity{
         super();
     }
 
-    public Restaurant(Integer id, String name) {
+    public Restaurant(Integer id, String name, Set<Menu> menuSet) {
         super(id);
         this.name = name;
+        this.menus = menuSet;
     }
 }

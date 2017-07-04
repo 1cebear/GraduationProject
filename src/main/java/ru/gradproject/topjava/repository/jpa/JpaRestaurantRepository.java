@@ -45,4 +45,10 @@ public class JpaRestaurantRepository implements RestaurantRepository {
     public List<Restaurant> getAll() {
         return em.createNamedQuery(Restaurant.ALL_SORTED, Restaurant.class).getResultList();
     }
+
+    public Restaurant create(Restaurant restaurant)
+    {
+        em.persist(restaurant);
+        return restaurant;
+    }
 }
