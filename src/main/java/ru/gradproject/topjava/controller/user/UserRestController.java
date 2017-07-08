@@ -42,6 +42,7 @@ public class UserRestController extends AbstractUserController {
         super.update(user, id);
     }
 
+    @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<User> createWithLocation(@RequestBody User user) {
         User created = super.create(user);
         URI uriOfNewResource = ServletUriComponentsBuilder.fromCurrentContextPath()

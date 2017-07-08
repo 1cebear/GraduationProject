@@ -32,7 +32,7 @@ public class JpaDishRepository implements DishRepository {
         if (!dish.isNew() && get(dish.getId(), menuId) == null) {
             return null;
         }
-        dish.setMenu(em.getReference(Menu.class, menuId));
+        dish.setMenu(em.find(Menu.class, menuId));
         if (dish.isNew()) {
             em.persist(dish);
             return dish;

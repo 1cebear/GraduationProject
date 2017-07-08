@@ -10,8 +10,10 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.context.WebApplicationContext;
 import org.springframework.web.filter.CharacterEncodingFilter;
+import ru.gradproject.topjava.service.DishService;
 import ru.gradproject.topjava.service.MenuService;
 import ru.gradproject.topjava.service.RestaurantService;
+import ru.gradproject.topjava.service.UserService;
 
 import javax.annotation.PostConstruct;
 
@@ -41,6 +43,12 @@ public class AbstractControllerTest {
 
     @Autowired
     protected RestaurantService restaurantService;
+
+    @Autowired
+    protected DishService dishService;
+
+    @Autowired
+    protected UserService userService;
 
     @Autowired
     private WebApplicationContext webApplicationContext;

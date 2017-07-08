@@ -16,37 +16,38 @@ import java.util.List;
 @RestController
 @RequestMapping(value = DishRestController.REST_URL, produces = MediaType.APPLICATION_JSON_VALUE)
 public class DishRestController extends AbstractDishController {
-    static final String REST_URL = "/rest/menus/{menuId}/dishes";
+    static final String REST_URL = "/rest/restaurants/{restaurantId}/menus/{menuId}/dishes";
 
     @Override
     @GetMapping("")
-    public List<Dish> getAll(@PathVariable("menuId") int menuId) {
-        return super.getAll(menuId);
+    public List<Dish> getAll(@PathVariable("restaurantId") int restaurantId, @PathVariable("menuId") int menuId) {
+        return super.getAll(menuId, restaurantId);
     }
 
     @Override
     @GetMapping("/{id}")
-    public Dish get(@PathVariable("menuId") int menuId, @PathVariable("id") int id) {
-        return super.get(id, menuId);
+    public Dish get(@PathVariable("restaurantId") int restaurantId, @PathVariable("menuId") int menuId, @PathVariable("id") int id) {
+        return super.get(id, menuId, restaurantId);
     }
 
     @Override
     @DeleteMapping("/{id}")
-    public void delete(@PathVariable("menuId") int menuId, @PathVariable("id") int id) {
-        super.delete(id, menuId);
+    public void delete(@PathVariable("restaurantId") int restaurantId, @PathVariable("menuId") int menuId, @PathVariable("id") int id) {
+        super.delete(id, menuId, restaurantId);
     }
 
     @Override
     @PutMapping(value = "/{id}", consumes = MediaType.APPLICATION_JSON_VALUE)
-    public void update(@RequestBody Dish dish,@PathVariable("menuId") int menuId, @PathVariable("id")  int id) {
-        super.update(dish, id, menuId);
+    public void update(@RequestBody Dish dish, @PathVariable("restaurantId") int restaurantId, @PathVariable("menuId") int menuId, @PathVariable("id") int id) {
+        super.update(dish, id, menuId, restaurantId);
     }
 
-    public ResponseEntity<Dish> createWithLocation(@RequestBody Dish dish) {
-        Dish created = super.create(dish);
+    @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<Dish> createWithLocation(@RequestBody Dish dish, @PathVariable("restaurantId") int restaurantId, @PathVariable("menuId") int menuId) {
+        Dish created = super.create(dish, restaurantId, menuId);
         URI uriOfNewResource = ServletUriComponentsBuilder.fromCurrentContextPath()
                 .path(REST_URL + "/{id}")
-                .buildAndExpand(created.getId()).toUri();
+                .buildAndExpand(restaurantId, menuId, created.getId()).toUri();
         return ResponseEntity.created(uriOfNewResource).body(created);
     }
 }

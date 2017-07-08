@@ -4,6 +4,7 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
+import ru.gradproject.topjava.ActiveRestaurant;
 import ru.gradproject.topjava.controller.dish.DishRestController;
 import ru.gradproject.topjava.model.Menu;
 
@@ -39,15 +40,15 @@ public class MenuRestController extends AbstractMenuController {
     @Override
     @PutMapping(value = "/{id}", consumes = MediaType.APPLICATION_JSON_VALUE)
     public void update(@RequestBody Menu menu, @PathVariable("id") int id, @PathVariable("restaurantId") int restaurantId) {
-        super.update(menu, restaurantId, id);
+        super.update(menu, id, restaurantId);
     }
 
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Menu> createWithLocation(@RequestBody Menu menu) {
-        Menu created = super.create(menu);
+    public ResponseEntity<Menu> createWithLocation(@RequestBody Menu menu, @PathVariable("restaurantId") int restaurantId) {
+        Menu created = super.create(menu, restaurantId);
         URI uriOfNewResource = ServletUriComponentsBuilder.fromCurrentContextPath()
                 .path(REST_URL + "/{id}")
-                .buildAndExpand(created.getId()).toUri();
+                .buildAndExpand(restaurantId, created.getId()).toUri();
         return ResponseEntity.created(uriOfNewResource).body(created);
     }
 }

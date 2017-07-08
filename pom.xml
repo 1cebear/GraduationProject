@@ -230,6 +230,7 @@
             <version>1.2</version>
         </dependency>
 
+        <!--JSON-->
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
@@ -276,12 +277,6 @@
             <version>${spring-security.version}</version>
         </dependency>
 
-        <!--JSON-->
-        <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-databind</artifactId>
-            <version>${jackson-json.version}</version>
-        </dependency>
 
         <!--Test-->
         <dependency>

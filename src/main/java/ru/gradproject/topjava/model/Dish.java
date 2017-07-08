@@ -64,14 +64,13 @@ public class Dish extends BaseEntity {
     public Dish() {
     }
 
-    public Dish(Integer id, Menu menu, int price, String name) {
+    public Dish(Integer id, int price, String name) {
         super(id);
-        this.menu = menu;
         this.price = price;
         this.name = name;
     }
 
-    public Dish(Menu menu, int price, String name) {
-        this(null, menu, price, name);
+    public Dish(int price, String name) {
+        this(null, price, name);
     }
 }

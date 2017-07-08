@@ -51,7 +51,7 @@ public class User extends BaseEntity {
         return name;
     }
 
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "menu")
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "user")
     @JsonManagedReference
     private Set<UserScore> userScores;
 
@@ -89,6 +89,22 @@ public class User extends BaseEntity {
 
     public void setRoles(Set<Role> roles) {
         this.roles = roles;
+    }
+
+    public User()
+    {
+        super();
+    }
+
+    public User(Integer id)
+    {
+        super(id);
+    }
+
+    public User(Integer id, String name)
+    {
+        super(id);
+        this.name = name;
     }
 
 }

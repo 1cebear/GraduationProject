@@ -40,23 +40,23 @@ public abstract class AbstractDishController {
         dishService.update(dish, menuId);
     }
 
-    public List<Dish> getAll(int menuId) {
+    public List<Dish> getAll(int menuId, int restaurantId) {
         return dishService.getAll(menuId);
     }
 
-    public Dish get(int id, int menuId) {
+    public Dish get(int id, int menuId, int restaurantId) {
         return dishService.get(id, menuId);
     }
 
-    public void delete(int id, int menuId) {
+    public void delete(int id, int menuId, int restaurantId) {
         dishService.delete(id, menuId);
     }
 
-    public Dish create(Dish dish, int menuId) {
+    public Dish create(Dish dish, int menuId, int restaurantId) {
         return dishService.save(dish, menuId);
     }
 
-    public void update(Dish dish, int id, int menuId) {
+    public void update(Dish dish, int id, int menuId, int restaurantId) {
         dishService.update(dish, menuId);
     }
 }

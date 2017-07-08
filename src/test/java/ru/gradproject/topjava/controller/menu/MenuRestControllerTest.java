@@ -10,6 +10,7 @@ import ru.gradproject.topjava.model.Restaurant;
 
 
 import java.time.LocalDateTime;
+import java.util.HashSet;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
@@ -22,15 +23,14 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 /**
  * Created by Icebear on 27.06.2017.
  */
-public class MenuRestControllerTest extends AbstractControllerTest{
+public class MenuRestControllerTest extends AbstractControllerTest {
 
 
-
-    private static final String REST_URL = MenuRestController.REST_URL;
+    private static final String REST_URL = MenuRestController.REST_URL+"/";
 
     @Test
     public void testGetAll() throws Exception {
-        mockMvc.perform(get(REST_URL , 100002))
+        mockMvc.perform(get(REST_URL, 100002))
                 .andExpect(status().isOk())
                 .andDo(print())
                 .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON));
@@ -38,7 +38,7 @@ public class MenuRestControllerTest extends AbstractControllerTest{
 
     @Test
     public void testGet() throws Exception {
-        mockMvc.perform(get(REST_URL +"/{id}", 100002, 100004))
+        mockMvc.perform(get(REST_URL + "{id}", 100002, 100004))
                 .andExpect(status().isOk())
                 .andDo(print())
                 .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON));
@@ -46,25 +46,22 @@ public class MenuRestControllerTest extends AbstractControllerTest{
 
     @Test
     public void testDelete() throws Exception {
-        mockMvc.perform(delete(REST_URL +"/{id}", 100002, 100004)).
+        mockMvc.perform(delete(REST_URL + "{id}", 100002, 100004)).
                 andExpect(status().isOk());
     }
 
     @Test
     public void testUpdate() throws Exception {
-        Menu updated = new Menu();
-        updated.setName("test update");
-        mockMvc.perform(put(REST_URL + "/{id}", 100002, 100004)
-                .contentType(MediaType.APPLICATION_JSON)
-                .content(JsonUtil.writeValue(updated))).andExpect(status().isOk());
+        Menu menu = new Menu(100004, "test update", new Restaurant(100002, "test restaurant", new HashSet<>()), LocalDateTime.now());
+        mockMvc.perform(put(REST_URL +  "{id}", 100002, 100004).contentType(MediaType.APPLICATION_JSON)
+                .content(JsonUtil.writeValue(menu)))
+                .andExpect(status().isOk());
     }
 
     @Test
-    public void testCreate() throws Exception
-    {
-
-        Menu created = new Menu(100050, "test create", new Restaurant(), LocalDateTime.now());
-        ResultActions action =  mockMvc.perform(post(REST_URL, 100002)
+    public void testCreate() throws Exception {
+        Menu created = new Menu(null, "test create", new Restaurant(100002, "test restaurant", new HashSet<>()), LocalDateTime.now());
+        mockMvc.perform(post(REST_URL, 100002)
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(JsonUtil.writeValue(created))).andExpect(status().isCreated());
     }

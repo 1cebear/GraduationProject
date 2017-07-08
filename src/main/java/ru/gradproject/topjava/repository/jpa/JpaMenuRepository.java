@@ -32,7 +32,7 @@ public class JpaMenuRepository implements MenuRepository {
         if (!menu.isNew() && get(menu.getId(), restaurantId) == null) {
             return null;
         }
-        menu.setRestaurant(em.getReference(Restaurant.class, restaurantId));
+        menu.setRestaurant(em.find(Restaurant.class, restaurantId));
         if (menu.isNew()) {
             em.persist(menu);
             return menu;
