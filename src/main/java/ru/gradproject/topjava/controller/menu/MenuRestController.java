@@ -4,8 +4,6 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
-import ru.gradproject.topjava.ActiveRestaurant;
-import ru.gradproject.topjava.controller.dish.DishRestController;
 import ru.gradproject.topjava.model.Menu;
 
 import java.net.URI;

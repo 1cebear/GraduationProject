@@ -6,9 +6,6 @@ import ru.gradproject.topjava.controller.AbstractControllerTest;
 import ru.gradproject.topjava.controller.json.JsonUtil;
 import ru.gradproject.topjava.model.User;
 
-import java.util.HashSet;
-
-import static org.junit.Assert.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
@@ -36,11 +33,6 @@ public class UserRestControllerTest extends AbstractControllerTest {
                 .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON));
     }
 
-    @Test
-    public void testDelete() throws Exception {
-        mockMvc.perform(delete(REST_URL + "{id}", 100000)).
-                andExpect(status().isOk());
-    }
 
     @Test
     public void testUpdate() throws Exception {
@@ -63,4 +55,9 @@ public class UserRestControllerTest extends AbstractControllerTest {
                 .andExpect(status().isCreated());
     }
 
+    @Test
+    public void testDelete() throws Exception {
+        mockMvc.perform(delete(REST_URL + "{id}", 100000)).
+                andExpect(status().isOk());
+    }
 }

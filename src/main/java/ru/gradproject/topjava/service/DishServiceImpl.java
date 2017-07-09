@@ -1,8 +1,8 @@
 package ru.gradproject.topjava.service;
 
-import ru.gradproject.topjava.model.Dish;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import ru.gradproject.topjava.model.Dish;
 import ru.gradproject.topjava.repository.DishRepository;
 
 import java.util.List;

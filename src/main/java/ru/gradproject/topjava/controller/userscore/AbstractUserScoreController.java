@@ -21,31 +21,47 @@ public abstract class AbstractUserScoreController {
         return userScoreService.getAll(userId, menuId);
     }
 
+    public List<UserScore> getAllByUserAndMenu(int userId, int menuId) {
+        return userScoreService.getAll(userId, menuId);
+    }
+
+    public List<UserScore> getAllByUser(int userId) {
+        return userScoreService.getAll(userId, null);
+    }
+
+    public List<UserScore> getAllByMenu(int menuId) {
+        return userScoreService.getAll(null, menuId);
+    }
+
     public UserScore get(int id) {
-        int userId = ActiveUser.id();
-        int menuId = ActiveMenu.id();
+        return userScoreService.get(id, ActiveUser.id(), ActiveMenu.id());
+    }
+
+    public UserScore get(int id, int userId, int menuId) {
         return userScoreService.get(id, userId, menuId);
     }
 
     public void delete(int id) {
-        int userId = ActiveUser.id();
-        int menuId = ActiveMenu.id();
+        userScoreService.delete(id, ActiveUser.id(), ActiveMenu.id());
+    }
+
+    public void delete(int id, int userId, int menuId) {
         userScoreService.delete(id, userId, menuId);
     }
 
-    public UserScore create(UserScore userScore) {
-        int userId = ActiveUser.id();
-        int menuId = ActiveMenu.id();
-        return userScoreService.save(userScore,userId, menuId);
+    public void update(UserScore userScore, int id) {
+        userScoreService.update(userScore, ActiveUser.id, ActiveMenu.id());
     }
 
-    public void update(UserScore userScore, int id) {
-        int userId = ActiveUser.id();
-        int menuId = ActiveMenu.id();
+    public UserScore create(UserScore userScore) {
+        return userScoreService.save(userScore, ActiveUser.id, ActiveMenu.id());
+    }
+
+    public void update(UserScore userScore, int userId, int menuId, int id) {
         userScoreService.update(userScore, userId, menuId);
     }
 
-    public List<UserScore> getAll(Integer menuId, Integer userId) {
-        return userScoreService.getAll(userId, menuId);
+    public UserScore create(UserScore userScore, int userId, int menuId) {
+        return userScoreService.save(userScore, userId, menuId);
     }
 }

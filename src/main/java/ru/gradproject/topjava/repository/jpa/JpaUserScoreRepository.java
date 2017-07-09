@@ -9,7 +9,6 @@ import ru.gradproject.topjava.repository.UserScoreRepository;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
-import javax.validation.constraints.Null;
 import java.util.List;
 
 /**

@@ -5,10 +5,6 @@ import org.springframework.http.MediaType;
 import ru.gradproject.topjava.controller.AbstractControllerTest;
 import ru.gradproject.topjava.controller.json.JsonUtil;
 import ru.gradproject.topjava.model.Dish;
-import ru.gradproject.topjava.model.Menu;
-
-
-import java.time.LocalDateTime;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
@@ -38,16 +34,11 @@ public class DishRestControllerTest extends AbstractControllerTest {
                 .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON));
     }
 
-    @Test
-    public void testDelete() throws Exception {
-        mockMvc.perform(delete(REST_URL + "100007", 100002, 100004)).
-                andExpect(status().isOk());
-    }
 
     @Test
     public void testUpdate() throws Exception {
         Dish dish = new Dish(100007, 50, "test update");
-        mockMvc.perform(put(REST_URL +  "{id}", 100002, 100004, 100007).contentType(MediaType.APPLICATION_JSON)
+        mockMvc.perform(put(REST_URL + "{id}", 100002, 100004, 100007).contentType(MediaType.APPLICATION_JSON)
                 .content(JsonUtil.writeValue(dish)))
                 .andExpect(status().isOk());
     }
@@ -59,6 +50,12 @@ public class DishRestControllerTest extends AbstractControllerTest {
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(JsonUtil.writeValue(dish)))
                 .andExpect(status().isCreated());
+    }
+
+    @Test
+    public void testDelete() throws Exception {
+        mockMvc.perform(delete(REST_URL + "100007", 100002, 100004)).
+                andExpect(status().isOk());
     }
 
 }

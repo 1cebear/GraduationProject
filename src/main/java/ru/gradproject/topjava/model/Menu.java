@@ -45,17 +45,17 @@ public class Menu extends BaseEntity {
     @NotBlank
     private String name;
 
-//    @OneToMany(fetch = FetchType.EAGER, mappedBy = "menu")
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "menu")
 //    @JsonManagedReference
-//    private Set<UserScore> userScores;
-//
-//    public Set<UserScore> getUserScores() {
-//        return userScores;
-//    }
-//
-//    public void setUserScores(Set<UserScore> userScores) {
-//        this.userScores = userScores;
-//    }
+    private Set<UserScore> userScores;
+
+    public Set<UserScore> getUserScores() {
+        return userScores;
+    }
+
+    public void setUserScores(Set<UserScore> userScores) {
+        this.userScores = userScores;
+    }
 
     public String getName() {
         return name;

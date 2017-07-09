@@ -1,6 +1,5 @@
 package ru.gradproject.topjava.model;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
 import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
 
@@ -12,10 +11,10 @@ import javax.validation.constraints.NotNull;
  */
 @SuppressWarnings("JpaQlInspection")
 @NamedQueries({
-        @NamedQuery(name = UserScore.ALL_SORTED, query = "SELECT us FROM UserScore us WHERE us.menu.id=:menuId AND us.user.id=:userId"),
+        @NamedQuery(name = UserScore.ALL_SORTED, query = "SELECT us FROM UserScore us JOIN FETCH us.user u WHERE (us.menu.id=:menuId AND us.user.id=:userId)"),
         @NamedQuery(name = UserScore.DELETE, query = "DELETE FROM UserScore us WHERE us.id=:id AND us.menu.id=:menuId AND us.user.id=:userId"),
-        @NamedQuery(name = UserScore.All_BY_USER, query = "SELECT us FROM UserScore us WHERE us.user.id=:userId"),
-        @NamedQuery(name = UserScore.ALL_BY_MENU, query = "SELECT us FROM UserScore us WHERE us.menu.id=:menuId")
+        @NamedQuery(name = UserScore.All_BY_USER, query = "SELECT us FROM UserScore us JOIN FETCH us.user u WHERE us.user.id=:userId"),
+        @NamedQuery(name = UserScore.ALL_BY_MENU, query = "SELECT us FROM UserScore us JOIN FETCH us.user u WHERE us.menu.id=:menuId")
 })
 @Entity
 @Table(name = "userscores")
@@ -26,17 +25,17 @@ public class UserScore extends BaseEntity {
     public static final String ALL_BY_MENU = "UserScore.getAllByMenu";
     public static final String DELETE = "UserScore.delete";
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id", nullable = false)
     @OnDelete(action = OnDeleteAction.CASCADE)
-    @JsonBackReference
+//    @JsonBackReference
     @NotNull
     private User user;
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "menu_id", nullable = false)
     @OnDelete(action = OnDeleteAction.CASCADE)
-    @JsonBackReference
+//    @JsonBackReference
     @NotNull
     private Menu menu;
 
@@ -66,5 +65,15 @@ public class UserScore extends BaseEntity {
 
     public void setScore(int score) {
         this.score = score;
+    }
+
+    public UserScore(Integer id, int score) {
+        super(id);
+        this.score = score;
+    }
+
+    public UserScore()
+    {
+        super();
     }
 }

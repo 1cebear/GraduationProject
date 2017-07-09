@@ -1,9 +1,9 @@
 package ru.gradproject.topjava.repository.jpa;
 
-import ru.gradproject.topjava.model.Dish;
-import ru.gradproject.topjava.model.Menu;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
+import ru.gradproject.topjava.model.Dish;
+import ru.gradproject.topjava.model.Menu;
 import ru.gradproject.topjava.repository.DishRepository;
 
 import javax.persistence.EntityManager;

@@ -25,39 +25,48 @@ public class UserScoreRestController extends AbstractUserScoreController {
     }
 
     @Override
-    @GetMapping("/{id}")
-    public UserScore get(@PathVariable("id")  int id) {
-        return super.get(id);
+    @GetMapping("/user/{userid}/menu/{menuid}")
+    public List<UserScore> getAllByUserAndMenu(@PathVariable("userid") int userId, @PathVariable("menuid") int menuId) {
+        return super.getAllByUserAndMenu(userId, menuId);
+    }
+
+
+    @Override
+    @GetMapping("/user/{userid}")
+    public List<UserScore> getAllByUser(@PathVariable("userid") int userId) {
+        return super.getAllByUser(userId);
     }
 
     @Override
-    @DeleteMapping("/{id}")
-    public void delete(@PathVariable("id") int id) {
-        super.delete(id);
+    @GetMapping("/menu/{menuid}")
+    public List<UserScore> getAllByMenu(@PathVariable("menuid") int menuId) {
+        return super.getAllByMenu(menuId);
     }
 
     @Override
-    @PutMapping(value = "/{id}", consumes = MediaType.APPLICATION_JSON_VALUE)
-    public void update(UserScore userScore, @PathVariable("id") int id) {
-        super.update(userScore, id);
+    @GetMapping("/user/{userid}/menu/{menuid}/{id}")
+    public UserScore get(@PathVariable("id") int id, @PathVariable("userid") int userId, @PathVariable("menuid") int menuId) {
+        return super.get(id, userId, menuId);
     }
 
-    public ResponseEntity<UserScore> createWithLocation(@RequestBody UserScore userScore) {
-        UserScore created = super.create(userScore);
+    @Override
+    @DeleteMapping("/user/{userid}/menu/{menuid}/{id}")
+    public void delete(@PathVariable("id") int id, @PathVariable("userid") int userId, @PathVariable("menuid") int menuId) {
+        super.delete(id, userId, menuId);
+    }
+
+    @Override
+    @PutMapping(value = "/user/{userid}/menu/{menuid}/{id}", consumes = MediaType.APPLICATION_JSON_VALUE)
+    public void update(@RequestBody UserScore userScore, @PathVariable("userid") int userId, @PathVariable("menuid") int menuId, @PathVariable("id") int id) {
+        super.update(userScore, userId, menuId, id);
+    }
+
+    @PostMapping(value = "/user/{userid}/menu/{menuid}", consumes = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<UserScore> createWithLocation(@RequestBody UserScore userScore, @PathVariable("userid") int userId, @PathVariable("menuid") int menuId) {
+        UserScore created = super.create(userScore, userId, menuId);
         URI uriOfNewResource = ServletUriComponentsBuilder.fromCurrentContextPath()
                 .path(REST_URL + "/{id}")
-                .buildAndExpand(created.getId()).toUri();
+                .buildAndExpand(userId, menuId, created.getId()).toUri();
         return ResponseEntity.created(uriOfNewResource).body(created);
     }
-
-    @GetMapping("/user/{id}")
-    public List<UserScore> getAllByUser(@PathVariable("id") int userId) {
-        return super.getAll(null, userId);
-    }
-
-    @GetMapping("/menu/{id}")
-    public List<UserScore> getAllByMenu(@PathVariable("id") int menuId) {
-        return super.getAll(menuId, null);
-    }
-
 }

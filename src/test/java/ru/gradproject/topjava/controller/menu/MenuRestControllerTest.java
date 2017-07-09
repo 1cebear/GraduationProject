@@ -2,20 +2,15 @@ package ru.gradproject.topjava.controller.menu;
 
 import org.junit.Test;
 import org.springframework.http.MediaType;
-import org.springframework.test.web.servlet.ResultActions;
 import ru.gradproject.topjava.controller.AbstractControllerTest;
 import ru.gradproject.topjava.controller.json.JsonUtil;
 import ru.gradproject.topjava.model.Menu;
 import ru.gradproject.topjava.model.Restaurant;
 
-
 import java.time.LocalDateTime;
 import java.util.HashSet;
 
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
@@ -44,11 +39,6 @@ public class MenuRestControllerTest extends AbstractControllerTest {
                 .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON));
     }
 
-    @Test
-    public void testDelete() throws Exception {
-        mockMvc.perform(delete(REST_URL + "{id}", 100002, 100004)).
-                andExpect(status().isOk());
-    }
 
     @Test
     public void testUpdate() throws Exception {
@@ -66,4 +56,9 @@ public class MenuRestControllerTest extends AbstractControllerTest {
                 .content(JsonUtil.writeValue(created))).andExpect(status().isCreated());
     }
 
+    @Test
+    public void testDelete() throws Exception {
+        mockMvc.perform(delete(REST_URL + "{id}", 100002, 100004)).
+                andExpect(status().isOk());
+    }
 }

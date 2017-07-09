@@ -4,10 +4,8 @@ import org.junit.Test;
 import org.springframework.http.MediaType;
 import ru.gradproject.topjava.controller.AbstractControllerTest;
 import ru.gradproject.topjava.controller.json.JsonUtil;
-import ru.gradproject.topjava.model.Menu;
 import ru.gradproject.topjava.model.Restaurant;
 
-import java.time.LocalDateTime;
 import java.util.HashSet;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
@@ -38,11 +36,6 @@ public class RestaurantRestControllerTest extends AbstractControllerTest {
                 .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON));
     }
 
-    @Test
-    public void testDelete() throws Exception {
-        mockMvc.perform(delete(REST_URL + "{id}", 100002)).
-                andExpect(status().isOk());
-    }
 
     @Test
     public void testUpdate() throws Exception {
@@ -65,4 +58,9 @@ public class RestaurantRestControllerTest extends AbstractControllerTest {
                 .andExpect(status().isCreated());
     }
 
+    @Test
+    public void testDelete() throws Exception {
+        mockMvc.perform(delete(REST_URL + "{id}", 100002)).
+                andExpect(status().isOk());
+    }
 }

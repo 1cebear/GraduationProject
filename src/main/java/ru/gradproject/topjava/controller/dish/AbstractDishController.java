@@ -1,8 +1,8 @@
 package ru.gradproject.topjava.controller.dish;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import ru.gradproject.topjava.ActiveMenu;
 import ru.gradproject.topjava.model.Dish;
-import org.springframework.beans.factory.annotation.Autowired;
 import ru.gradproject.topjava.service.DishService;
 
 import java.util.List;
